@@ -1,2 +1,0 @@
-Los archivos con el nombre 'full_Augmented_' contienen una mezcla entre los datasets MELD y enterface. A los positivos se los duplicó y y se le agregó ruido de amplitud aleatoria para aumentar la cantidad de positivos. Luego se eliminaron varios negativos de forma aleatoria para obtener datasets mas equilibrados, los números al final del nombre del archivo representan la relación entre positivos y negativos.
- 
