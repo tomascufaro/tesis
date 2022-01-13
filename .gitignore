@@ -2,5 +2,7 @@
 Data/
 __pycache__/
 .ipynb_checlpoints/
-
+MELD.Raw/
+EmoDB/
+IEMOCAP_full_release/
 

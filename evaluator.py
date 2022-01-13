@@ -48,7 +48,7 @@ class Metrics:
 
 
 class Evaluator:
-    def _predict(self, model, x, y, threshold=0.5):
+    def __predict(self, model, x, y, threshold=0.5):
         y_pred = model.predict(x)
         y_predicted = []
 
@@ -60,13 +60,13 @@ class Evaluator:
 
         return y_predicted
 
-    def _conf_matrix(self, y, y_predicted):
+    def __conf_matrix(self, y, y_predicted):
 
         tn, fp, fn, tp = confusion_matrix(y, y_predicted).ravel()
 
         return tn, fp, fn, tp
 
-    def _calc_f_score(self, precision, recall, beta):
+    def __calc_f_score(self, precision, recall, beta):
 
         beta_square = beta ** 2
         f = (
@@ -78,7 +78,7 @@ class Evaluator:
 
         return f
 
-    def _calc_metrics(self, tn, fp, fn, tp, beta):
+    def __calc_metrics(self, tn, fp, fn, tp, beta):
 
         accuracy = round(
             (tp + tn) / (fn + fp + tp + tn), 2
@@ -141,19 +141,19 @@ class Evaluator:
         val = Metrics()
 
         if x_train != []:
-            y_predicted = self._predict(model, x_train, y_train, threshold)
-            tn, fp, fn, tp = self._conf_matrix(y_train, y_predicted)
-            train = self._calc_metrics(tn, fp, fn, tp, beta)
+            y_predicted = self.__predict(model, x_train, y_train, threshold)
+            tn, fp, fn, tp = self.__conf_matrix(y_train, y_predicted)
+            train = self.__calc_metrics(tn, fp, fn, tp, beta)
 
         if x_test != []:
-            y_predicted = self._predict(model, x_test, y_test, threshold)
-            tn, fp, fn, tp = self._conf_matrix(y_test, y_predicted)
-            test = self._calc_metrics(tn, fp, fn, tp, beta)
+            y_predicted = self.__predict(model, x_test, y_test, threshold)
+            tn, fp, fn, tp = self.__conf_matrix(y_test, y_predicted)
+            test = self.__calc_metrics(tn, fp, fn, tp, beta)
 
         if x_val != []:
-            y_predicted = self._predict(model, x_val, y_val, threshold)
-            tn, fp, fn, tp = self._conf_matrix(y_val, y_predicted)
-            val = self._calc_metrics(tn, fp, fn, tp, beta)
+            y_predicted = self.__predict(model, x_val, y_val, threshold)
+            tn, fp, fn, tp = self.__conf_matrix(y_val, y_predicted)
+            val = self.__calc_metrics(tn, fp, fn, tp, beta)
 
         if print_metrics:
             text = textwrap.dedent(

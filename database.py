@@ -11,9 +11,9 @@ import numpy as np
 
 class Database:
     load_dotenv()
-    _USER = os.getenv("DB_USER")
-    _PASS = os.getenv("DB_PASS")
-    _DB = os.getenv("DB_NAME")
+    __USER = os.getenv("DB_USER")
+    __PASS = os.getenv("DB_PASS")
+    __DB = os.getenv("DB_NAME")
     feature_names = (
         [f"mfcc{n}" for n in range(16)]
         + [f"mfcc_delta1{n}" for n in range(16)]
@@ -36,11 +36,11 @@ class Database:
     def __init__(self, collection):
         self.COLLECTION = collection
         self.cluster = MongoClient(
-            f"mongodb+srv://{self._USER}:{self._PASS}@cluster0.wywnr.mongodb.net/{self._DB}?retryWrites=true&w=majority"
+            f"mongodb+srv://{self.__USER}:{self.__PASS}@cluster0.wywnr.mongodb.net/{self.__DB}?retryWrites=true&w=majority"
         )
-        self.self = self.cluster[self._DB]
+        self.self = self.cluster[self.__DB]
         self.collection = self.self[collection]
-        self._get_datasets()
+        self.__get_datasets()
 
     def post(self, file_name, label, features, augmentation=""):
         id = f"{file_name}_{augmentation}"
@@ -70,7 +70,7 @@ class Database:
             out = self.collection.find_one({field: rgx})
         return out
 
-    def _get_datasets(self):
+    def __get_datasets(self):
         dataset_no_aug = self.collection.find({"augmented": False})
         self.dataset_no_aug = pd.DataFrame(list(dataset_no_aug))
         dataset_full_aug = self.collection.find({})
@@ -81,7 +81,7 @@ class Database:
         self.dataset_balanced_aug = pd.DataFrame(list(dataset_balanced_aug))
 
     def update(self):
-        self._get_datasets()
+        self.__get_datasets()
 
     def print_balance(self):
         self.positives_no_aug = self.collection.count_documents(
