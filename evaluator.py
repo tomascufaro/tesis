@@ -139,7 +139,6 @@ class Evaluator:
         train = Metrics()
         test = Metrics()
         val = Metrics()
-        
 
         if x_train != []:
             y_predicted = self._predict(model, x_train, y_train, threshold)
@@ -211,7 +210,7 @@ class Plotter:
         rho, pval = stats.spearmanr(x)
 
         fig, ax = plt.subplots(figsize=(20, 20))
-        im = ax.imshow(rho)
+        _ = ax.imshow(rho)
         n_features = len(self.feature_names)
         # We want to show all ticks...
         ax.set_xticks(np.arange(n_features))

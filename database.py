@@ -129,20 +129,3 @@ class Database:
             dataset_balanced_aug_x,
             dataset_balanced_aug_y,
         )
-
-
-if __name__ == "__main__":
-
-    db = Database("Dataset_bruto")
-
-    db_val = Database("Dataset_validation")
-    db_test = Database("Dataset_test")
-    results_val = list(db_val.collection.find())
-    results_test = list(db_test.collection.find())
-    results = results_test + results_val
-    db_train = Database("dataset_train")
-    for n, doc in enumerate(results):
-        results[n] = re.compile(f".*{doc['_id']}.*")
-
-    results = list(db.collection.find({"_id": {"$nin": results}}))
-    db_train.collection.insert_many(results)

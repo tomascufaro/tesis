@@ -133,22 +133,6 @@ class Augmenter:
         return output
 
 
-def butter_params(fs, order=5):
-    nyq = 0.5 * fs
-    low_freq = 300
-    high_freq = 3300
-    low = low_freq / nyq
-    high = high_freq / nyq
-    b, a = butter(order, [low, high], btype="band")
-    return b, a
-
-
-def butter_bandpass_filter(audio, fs, order=5):
-    b, a = butter_params(fs, order=order)
-    y = lfilter(b, a, audio)
-    return y
-
-
 # def augment_data(audio, sr):
 
 #     augment1 = Compose(
@@ -205,9 +189,10 @@ def get_mfccs(y, sr, n_mfcc):
 
 
 def feature_extraction(audio, sr, f0min, f0max, n_mfcc, unit="Hertz"):
-    audio = butter_bandpass_filter(audio, sr)
-    f0 = librosa.yin(audio, 60, 350, frame_length=4096)
+    bandpass_filter = Filter()
+    audio = bandpass_filter.process(audio, sr)
 
+    f0 = librosa.yin(audio, 60, 350, frame_length=4096)
     f0_delta = librosa.feature.delta(f0)
     meanF0 = np.nanmean(f0)
     stdevF0 = np.nanstd(f0)
