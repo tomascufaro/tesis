@@ -288,3 +288,7 @@ class Plotter:
         plt.legend(loc="upper right")
         plt.grid()
         plt.show()
+
+    @classmethod
+    def change_feature_names(cls, new_feature_names):
+        cls.feature_names = new_feature_names
