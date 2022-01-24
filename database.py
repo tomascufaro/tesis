@@ -71,14 +71,17 @@ class Database:
         return out
 
     def __get_datasets(self):
-        dataset_no_aug = self.collection.find({"augmented": False})
-        self.dataset_no_aug = pd.DataFrame(list(dataset_no_aug))
-        dataset_full_aug = self.collection.find({})
-        self.dataset_full_aug = pd.DataFrame(list(dataset_full_aug))
-        dataset_balanced_aug = self.collection.find(
-            {"$or": [{"label": 1}, {"augmented": False, "label": 0}]}
-        )
-        self.dataset_balanced_aug = pd.DataFrame(list(dataset_balanced_aug))
+        try:
+            dataset_no_aug = self.collection.find({"augmented": False})
+            self.dataset_no_aug = pd.DataFrame(list(dataset_no_aug))
+            dataset_full_aug = self.collection.find({})
+            self.dataset_full_aug = pd.DataFrame(list(dataset_full_aug))
+            dataset_balanced_aug = self.collection.find(
+                {"$or": [{"label": 1}, {"augmented": False, "label": 0}]}
+            )
+            self.dataset_balanced_aug = pd.DataFrame(list(dataset_balanced_aug))
+        except:
+            print("Empty collection")
 
     def update(self):
         self.__get_datasets()
@@ -129,3 +132,7 @@ class Database:
             dataset_balanced_aug_x,
             dataset_balanced_aug_y,
         )
+
+
+if __name__ == "__main__":
+    db = Database("meld")

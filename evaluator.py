@@ -93,7 +93,7 @@ class Evaluator:
             tp / (tp + fn), 2
         )  # sensibilidad, porcentaje de casos positivos detectados
         true_negative_rate = round(tn / (tn + fp), 2)
-        f_score = self._calc_f_score(precision, recall, beta)
+        f_score = self.__calc_f_score(precision, recall, beta)
         m = Metrics()
         m.set_metrics(
             accuracy, precision, specifity, recall, true_negative_rate, f_score
@@ -162,7 +162,7 @@ class Evaluator:
                 Precisión: {train.precision} / {test.precision} / {val.precision}\n\
                 Especificidad: {train.specifity} / {test.specifity} / {val.specifity}\n\
                 Sensibilidad: {train.recall} / {test.recall} / {val.recall}\n\
-                true negative rate: {train.true_negative_rate} / {val.true_negative_rate} / {test.true_negative_rate}\n\
+                true negative rate: {train.true_negative_rate} / {test.true_negative_rate} / {val.true_negative_rate}\n\
                 F - Score: {train.f_score} / {test.f_score} / {val.f_score}"""
             )
             print(text)
