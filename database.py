@@ -11,6 +11,7 @@ import numpy as np
 
 class Database:
     load_dotenv()
+
     __USER = os.getenv("DB_USER")
     __PASS = os.getenv("DB_PASS")
     __DB = os.getenv("DB_NAME")
@@ -135,4 +136,4 @@ class Database:
 
 
 if __name__ == "__main__":
-    db = Database("meld")
+    Database("IEMOCAP")

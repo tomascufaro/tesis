@@ -8,4 +8,11 @@ EmoDB/
 IEMOCAP/
 wav_mp3.py
 Imagenes/
+test.csv
+train.csv
+val.csv
+wav2vec_test.py
+IEMOCAP_wav/
+IEMOCAP_mp3/
+wav2vec2-base-960h/
 
