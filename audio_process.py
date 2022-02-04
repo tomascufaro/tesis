@@ -133,43 +133,6 @@ class Augmenter:
         return output
 
 
-# def augment_data(audio, sr):
-
-#     augment1 = Compose(
-#         [
-#             AddGaussianNoise(min_amplitude=0.2, max_amplitude=0.5, p=1),
-#             TimeStretch(min_rate=0.6, max_rate=1.4, p=1, leave_length_unchanged=False),
-#         ]
-#     )
-#     augment2 = Compose(
-#         [
-#             AddGaussianNoise(min_amplitude=0.2, max_amplitude=0.5, p=1),
-#             PitchShift(min_semitones=-2, max_semitones=4, p=1),
-#         ]
-#     )
-#     augment3 = Compose(
-#         [
-#             AddGaussianNoise(min_amplitude=0.2, max_amplitude=0.5, p=1),
-#             ClippingDistortion(p=1, max_percentile_threshold=25),
-#         ]
-#     )
-#     augment4 = Compose(
-#         [
-#             AddGaussianNoise(min_amplitude=0.2, max_amplitude=0.4, p=1),
-#             AddImpulseResponse(
-#                 ir_path="/home/francoj/Documentos/Reconocimiento de emociones/tesis/IR",
-#                 p=1,
-#             ),
-#         ]
-#     )
-#     timestretch = augment1(samples=audio, sample_rate=sr)
-#     pitchshift = augment2(samples=audio, sample_rate=sr)
-#     clipping = augment3(samples=audio, sample_rate=sr)
-#     reverb = augment4(samples=audio, sample_rate=sr)
-
-#     return timestretch, pitchshift, clipping, reverb
-
-
 def get_crest_factor_RMS(sound):
     rms = np.mean(librosa.feature.rms(sound))
     peak = max(np.abs(sound))

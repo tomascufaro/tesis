@@ -46,6 +46,16 @@ class Metrics:
         )
         return text
 
+    def return_dict(self):
+        return {
+            "accuracy": self.accuracy,
+            "precision": self.precision,
+            "specifity": self.specifity,
+            "recall": self.recall,
+            "true_negative_rate": self.true_negative_rate,
+            "f_score": self.f_score,
+        }
+
 
 class Evaluator:
     def __predict(self, model, x, y, threshold=0.5):
@@ -122,6 +132,12 @@ class Evaluator:
         ax1.legend(fontsize=18)
         ax1.grid()
         plt.show()
+
+    def evaluate_from_pred(labels, pred, beta=1):
+        metrics = Metrics
+        tn, fp, fn, tp = self.__conf_matrix(labels, pred)
+        metrics = self.__calc_metrics(tn, fp, fn, tp, beta)
+        return metrics
 
     def evaluate(
         self,
