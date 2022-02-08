@@ -24,9 +24,10 @@ class Standard_Scaler(Scaler):
 
 
 class Preprocessor:
-    def __init__(self, scaler: Scaler, seed: int):
+    def __init__(self, scaler: Scaler, seed: int, db=None):
         self.seed = seed
         self.scaler = scaler
+        self.db = db
 
     def scale(self, x, y):
 
@@ -55,3 +56,9 @@ class Preprocessor:
 
     def delete_features(self):
         pass
+
+    def get_outliers(self):
+        if self.db == None:
+            raise ("Error: No Database")
+        else:
+            pass
