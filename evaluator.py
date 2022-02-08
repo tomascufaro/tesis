@@ -134,7 +134,6 @@ class Evaluator:
         plt.show()
 
     def evaluate_from_pred(self, labels, pred, beta=1):
-        metrics = Metrics
         tn, fp, fn, tp = self.__conf_matrix(labels, pred)
         metrics = self.__calc_metrics(tn, fp, fn, tp, beta)
         return metrics

@@ -2,6 +2,9 @@
 test.csv
 train.csv
 val.csv
+test_no_outliers.csv
+train_no_outliers.csv
+val_no_outliers.csv
 
 test.py
 wav_mp3.py
