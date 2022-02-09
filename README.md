@@ -9,5 +9,5 @@ Instalación (Linux):
 
 
     chmod +x ./install.sh
-    install.sh
+    ./install.sh
     

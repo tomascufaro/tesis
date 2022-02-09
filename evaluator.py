@@ -25,14 +25,7 @@ class Metrics:
         self.recall = recall
         self.true_negative_rate = true_negative_rate
         self.f_score = f_score
-        self.metrics = [
-            accuracy,
-            precision,
-            specifity,
-            recall,
-            true_negative_rate,
-            f_score,
-        ]
+        self.metrics = self.__return_dict()
 
     def __str__(self):
         text = textwrap.dedent(
@@ -46,7 +39,7 @@ class Metrics:
         )
         return text
 
-    def return_dict(self):
+    def __return_dict(self):
         return {
             "accuracy": self.accuracy,
             "precision": self.precision,
