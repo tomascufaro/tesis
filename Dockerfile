@@ -9,7 +9,9 @@ COPY . .
 RUN chmod +x install.sh
 RUN ./install.sh
 
-RUN pip install jupyterlab, ipwidgets, jupyterlab_widgets
+RUN pip install jupyterlab
+RUN pip install ipywidgets 
+RUN pip install jupyterlab_widgets
 
 RUN jupyter labextension install jupyterlab-plotly@4.14.3
 RUN jupyter labextension install @jupyter-widgets/jupyterlab-manager plotlywidget@4.14.3
