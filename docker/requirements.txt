@@ -1,0 +1,17 @@
+audiomentations
+datasets
+ipython
+Keras
+librosa
+matplotlib
+numpy
+packaging
+pymongo
+python-dotenv
+scikit_learn
+scipy
+torch
+torchaudio
+tqdm
+transformers
+parselmouth
