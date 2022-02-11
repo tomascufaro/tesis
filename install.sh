@@ -26,5 +26,5 @@ pip install transformers
 
 
 gdown --id 1miIQIphVRw2BF8PwOYQFV5sbH9ecbbE1
-
+tar -xf IEMOCAP_mp3.tar.gz
 mv ./.env_ ./.env
