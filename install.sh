@@ -15,29 +15,29 @@ elif [ -x "$(command -v dnf)" ];     then sudo dnf install $packagesNeeded
 elif [ -x "$(command -v zypper)" ];  then sudo zypper install $packagesNeeded
 else echo "FAILED TO INSTALL PACKAGE: Package manager not found. You must manually install: $packagesNeeded">&2; fi
 
-pip install --upgrade pip
-pip install pymongo[srv]
-pip install notebook
-pip install jupyterlab
-pip install gdown
-pip install pandas
-pip install audiomentations
-pip install datasets
-pip install ipython
-pip install Keras
-pip install librosa
-pip install matplotlib
-pip install numpy
-pip install packaging
-pip install pymongo
-pip install python-dotenv
-pip install scikit_learn
-pip install scipy
-pip install torch
-pip install torchaudio
-pip install tqdm
-pip install transformers
-pip install praat-parselmouth
+pip3 install --upgrade pip3
+pip3 install pymongo[srv]
+pip3 install notebook
+pip3 install jupyterlab
+pip3 install gdown
+pip3 install pandas
+pip3 install audiomentations
+pip3 install datasets
+pip3 install ipython
+pip3 install Keras
+pip3 install librosa
+pip3 install matplotlib
+pip3 install numpy
+pip3 install packaging
+pip3 install pymongo
+pip3 install python-dotenv
+pip3 install scikit_learn
+pip3 install scipy
+pip3 install torch
+pip3 install torchaudio
+pip3 install tqdm
+pip3 install transformers
+pip3 install praat-parselmouth
 
 
 gdown --id 1miIQIphVRw2BF8PwOYQFV5sbH9ecbbE1
