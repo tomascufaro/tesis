@@ -29,7 +29,7 @@ db = Database('IEMOCAP')
 # ## Prepare Data for Training
 
 from datasets import load_dataset, load_metric
-save_path = "."
+save_path = "./.csv_files"
 
 data_files = {
     "train": f"{save_path}/train.csv", 
