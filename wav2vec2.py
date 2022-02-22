@@ -20,15 +20,13 @@ from dataset_preprocessor import Preprocessor, Standard_Scaler
 from transformers.models.wav2vec2.feature_extraction_wav2vec2 import Wav2Vec2FeatureExtractor
 
 
-# In[2]:
 
 
+base_model = "facebook/wav2vec2-xls-r-300m"
+model_name = base_model.split('/')[-1]
 db = Database('IEMOCAP')
 
 # ## Prepare Data for Training
-
-# In[5]:
-
 
 from datasets import load_dataset, load_metric
 save_path = "."
@@ -46,15 +44,9 @@ print(train_dataset)
 print(eval_dataset)
 
 
-# In[4]:
-
-
 # We need to specify the input and output column
 input_column = "path"
 output_column = "emotion"
-
-
-# In[5]:
 
 
 import torch
@@ -65,15 +57,11 @@ print('Casos positivos: ',positive_cases)
 
 w0 = (negative_cases + positive_cases) / (2 * negative_cases)
 w1 = (positive_cases + negative_cases) / (2 * positive_cases)
-class_weights = torch.tensor([w0+0.4, w1-0.9])
+class_weights = torch.tensor([w0, w1])
 
 # Analizar este metodo: https://arxiv.org/abs/1901.05555
 
 print('Class_weights: ', class_weights)
-
-
-# In[6]:
-
 
 # we need to distinguish the unique labels in our SER dataset
 label_list = train_dataset.unique(output_column)
@@ -82,25 +70,16 @@ num_labels = len(label_list)
 print(f"A classification problem with {num_labels} classes: {label_list}")
 
 
-# In order to preprocess the audio into our classification model, we need to set up the relevant Wav2Vec2 assets regarding our language in this case `lighteternal/wav2vec2-large-xlsr-53-greek` fine-tuned by [Dimitris Papadopoulos](https://huggingface.co/lighteternal/wav2vec2-large-xlsr-53-greek). To handle the context representations in any audio length we use a merge strategy plan (pooling mode) to concatenate that 3D representations into 2D representations.
-# 
-# There are three merge strategies `mean`, `sum`, and `max`. In this example, we achieved better results on the mean approach. In the following, we need to initiate the config and the feature extractor from the Dimitris model.
 
-# In[7]:
-
+# There are three merge strategies `mean`, `sum`, and `max`
 
 from transformers import AutoConfig, Wav2Vec2Processor
 
 
-# In[11]:
 
 
-model_name_or_path = "facebook/wav2vec2-xls-r-300m"
+model_name_or_path = base_model
 pooling_mode = "mean"
-
-
-# In[9]:
-
 
 # config
 config = AutoConfig.from_pretrained(
@@ -113,32 +92,14 @@ config = AutoConfig.from_pretrained(
 setattr(config, 'pooling_mode', pooling_mode)
 
 
-# In[10]:
-
-
 processor = Wav2Vec2FeatureExtractor.from_pretrained(model_name_or_path,)
 target_sampling_rate = processor.sampling_rate
 print(f"The target sampling rate: {target_sampling_rate}")
 
 
-# # Preprocess Data
-
-# So far, we downloaded, loaded, and split the SER dataset into train and test sets. The instantiated our strategy configuration for using context representations in our classification problem SER. Now, we need to extract features from the audio path in context representation tensors and feed them into our classification model to determine the emotion in the speech.
-# 
-# Since the audio file is saved in the `.wav` format, it is easy to use **[Librosa](https://librosa.org/doc/latest/index.html)** or others, but we suppose that the format may be in the `.mp3` format in case of generality. We found that the **[Torchaudio](https://pytorch.org/audio/stable/index.html)** library works best for reading in `.mp3` data.
-# 
-# An audio file usually stores both its values and the sampling rate with which the speech signal was digitalized. We want to store both in the dataset and write a **map(...)** function accordingly. Also, we need to handle the string labels into integers for our specific classification task in this case, the **single-label classification** you may want to use for your **regression** or even **multi-label classification**.
-
-# In[11]:
-
-
 from database import Database
 from sklearn.preprocessing import MinMaxScaler
 from audio_process import Filter
-
-
-# In[12]:
-
 
 
 
@@ -191,24 +152,10 @@ eval_dataset = eval_dataset.map(
     num_proc=4
 )
 
+# En caso de que se quiera entrenar con menor cantidad de casos descomentar las dos siguientes lineas:
 
-# In[14]:
-
-
-# del db
-
-
-# In[15]:
-
-
-
-min_train_dataset = train_dataset.select(range(1000))
-
-min_eval_dataset = train_dataset.select(range(200))
-
-
-# In[16]:
-
+# train_dataset = train_dataset.select(range(1000))
+# eval_dataset = train_dataset.select(range(200))
 
 print(np.array(min_train_dataset['labels']).sum())
 
@@ -216,8 +163,6 @@ print(np.array(min_train_dataset['labels']).sum())
 # ## Model
 # 
 # Before diving into the training part, we need to build our classification model based on the merge strategy. 
-
-# In[23]:
 
 
 from dataclasses import dataclass
@@ -232,9 +177,6 @@ class SpeechClassifierOutput(ModelOutput):
     logits: torch.FloatTensor = None
     hidden_states: Optional[Tuple[torch.FloatTensor]] = None
     attentions: Optional[Tuple[torch.FloatTensor]] = None
-
-
-# In[14]:
 
 
 import torch
@@ -357,29 +299,6 @@ class Wav2Vec2ForSpeechClassification(Wav2Vec2PreTrainedModel):
         )
 
 
-# ## Training
-# 
-# The data is processed so that we are ready to start setting up the training pipeline. We will make use of 🤗's [Trainer](https://huggingface.co/transformers/master/main_classes/trainer.html?highlight=trainer) for which we essentially need to do the following:
-# 
-# - Define a data collator. In contrast to most NLP models, XLSR-Wav2Vec2 has a much larger input length than output length. *E.g.*, a sample of input length 50000 has an output length of no more than 100. Given the large input sizes, it is much more efficient to pad the training batches dynamically meaning that all training samples should only be padded to the longest sample in their batch and not the overall longest sample. Therefore, fine-tuning XLSR-Wav2Vec2 requires a special padding data collator, which we will define below
-# 
-# - Evaluation metric. During training, the model should be evaluated on the word error rate. We should define a `compute_metrics` function accordingly
-# 
-# - Load a pretrained checkpoint. We need to load a pretrained checkpoint and configure it correctly for training.
-# 
-# - Define the training configuration.
-# 
-# After having fine-tuned the model, we will correctly evaluate it on the test data and verify that it has indeed learned to correctly transcribe speech.
-
-# ### Set-up Trainer
-# 
-# Let's start by defining the data collator. The code for the data collator was copied from [this example](https://github.com/huggingface/transformers/blob/9a06b6b11bdfc42eea08fa91d0c737d1863c99e3/examples/research_projects/wav2vec2/run_asr.py#L81).
-# 
-# Without going into too many details, in contrast to the common data collators, this data collator treats the `input_values` and `labels` differently and thus applies to separate padding functions on them (again making use of XLSR-Wav2Vec2's context manager). This is necessary because in speech input and output are of different modalities meaning that they should not be treated by the same padding function.
-# Analogous to the common data collators, the padding tokens in the labels with `-100` so that those tokens are **not** taken into account when computing the loss.
-
-# In[19]:
-
 
 from dataclasses import dataclass
 from typing import Dict, List, Optional, Union
@@ -441,21 +360,14 @@ class DataCollatorCTCWithPadding:
         return batch
 
 
-# In[20]:
-
 
 data_collator = DataCollatorCTCWithPadding(processor=processor, padding=True)
 
 
 # Next, the evaluation metric is defined. There are many pre-defined metrics for classification/regression problems, but in this case, we would continue with just **Accuracy** for classification and **MSE** for regression. You can define other metrics on your own.
 
-# In[21]:
-
 
 is_regression = False
-
-
-# In[22]:
 
 
 import numpy as np
@@ -479,8 +391,6 @@ def compute_metrics(p: EvalPrediction):
 
 # Now, we can load the pretrained XLSR-Wav2Vec2 checkpoint into our classification model with a pooling strategy.
 
-# In[23]:
-
 
 model = Wav2Vec2ForSpeechClassification.from_pretrained(
     model_name_or_path,
@@ -492,28 +402,18 @@ model = Wav2Vec2ForSpeechClassification.from_pretrained(
 # The first component of XLSR-Wav2Vec2 consists of a stack of CNN layers that are used to extract acoustically meaningful - but contextually independent - features from the raw speech signal. This part of the model has already been sufficiently trained during pretraining and as stated in the [paper](https://arxiv.org/pdf/2006.13979.pdf) does not need to be fine-tuned anymore. 
 # Thus, we can set the `requires_grad` to `False` for all parameters of the *feature extraction* part.
 
-# In[24]:
-
 
 model.freeze_feature_extractor()
 
 
 # In a final step, we define all parameters related to training. 
-# To give more explanation on some of the parameters:
-# - `learning_rate` and `weight_decay` were heuristically tuned until fine-tuning has become stable. Note that those parameters strongly depend on the Common Voice dataset and might be suboptimal for other speech datasets.
-# 
-# For more explanations on other parameters, one can take a look at the [docs](https://huggingface.co/transformers/master/main_classes/trainer.html?highlight=trainer#trainingarguments).
-# 
-# **Note**: If one wants to save the trained models in his/her google drive the commented-out `output_dir` can be used instead.
 
-# In[25]:
 
 
 from transformers import TrainingArguments
 
 training_args = TrainingArguments(
-    output_dir="wav2vec2-xls-r-300m",
-    # output_dir="/content/gdrive/MyDrive/wav2vec2-xlsr-greek-speech-emotion-recognition"
+    output_dir=model_name,
     per_device_train_batch_size=2,
     per_device_eval_batch_size=2,
     gradient_accumulation_steps=2,
@@ -527,10 +427,6 @@ training_args = TrainingArguments(
     save_total_limit=2,
 )
 
-
-# For future use we can create our training script, we do it in a simple way. You can add more on you own.
-
-# In[8]:
 
 
 from typing import Any, Dict, Union
@@ -641,9 +537,6 @@ class CTCTrainer(Trainer):
 
 # Now, all instances can be passed to Trainer and we are ready to start training!
 
-# In[27]:
-
-
 trainer = CTCTrainer(
     model=model,
     data_collator=data_collator,
@@ -656,118 +549,43 @@ trainer = CTCTrainer(
 )
 
 
-# In[28]:
-
-
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 if device == 'cpu':
     import multiprocessing
     ncpus = multiprocessing.cpu_count()
     torch.set_num_threads(ncpus)
 
-
-# ### Training
-
-# Training will take between 10 and 60 minutes depending on the GPU allocated to this notebook. 
-# 
-# In case you want to use this google colab to fine-tune your model, you should make sure that your training doesn't stop due to inactivity. A simple hack to prevent this is to paste the following code into the console of this tab (right mouse click -> inspect -> Console tab and insert code).
-
-# ```javascript
-# function ConnectButton(){
-#     console.log("Connect pushed"); 
-#     document.querySelector("#top-toolbar > colab-connect-button").shadowRoot.querySelector("#connect").click() 
-# }
-# setInterval(ConnectButton,60000);
-# ```
-
-# In[ ]:
-
-
 trainer.train()
 
 
-# The training loss goes down and we can see that the Acurracy on the test set also improves nicely. Because this notebook is just for demonstration purposes, we can stop here.
-# 
-# The resulting model of this notebook has been saved to [m3hrdadfi/wav2vec2-xlsr-greek-speech-emotion-recognition](https://huggingface.co/m3hrdadfi/wav2vec2-xlsr-greek-speech-emotion-recognition)
-# 
-# As a final check, let's load the model and verify that it indeed has learned to recognize the emotion in the speech.
-# 
-# Let's first load the pretrained checkpoint.
+## Evaluation
 
-# ## Evaluation
 
-# In[3]:
 
 
 import librosa
 from sklearn.metrics import classification_report
 
 
-# In[6]:
-
-
 test_dataset = load_dataset("csv", data_files={"test": "./test.csv"}, delimiter="\t")["test"]
-test_dataset
-
-
-# In[16]:
-
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Device: {device}")
 
 
-# In[17]:
 n_checkpoint = 0
-checkpoints = glob.glob('wav2vec2-xls-r-300m/checkpoint-*')
+checkpoints = glob.glob(f'{model_name}checkpoint-*')
 for checkpoint in checkpoints:
     n = int(checkpoint.split('-')[-1])
     if n > n_checkpoint:
         n_checkpoint = n
     
-model_name_or_path = "wav2vec2-xls-r-300m/checkpoint-"+ str(n_checkpoint)
+model_name_or_path = f"{model_name}/checkpoint-{n_checkpoint}"
+
 config = AutoConfig.from_pretrained(model_name_or_path)
 setattr(config, 'pooling_mode', pooling_mode)
 processor = Wav2Vec2FeatureExtractor.from_pretrained(model_name_or_path,)
 model = Wav2Vec2ForSpeechClassification.from_pretrained(model_name_or_path).to(device)
-
-
-# In[20]:
-
-
-# def speech_file_to_array_fn(path):
-#     speech_array, sampling_rate = torchaudio.load(path)
-#     resampler = torchaudio.transforms.Resample(sampling_rate, target_sampling_rate)
-#     speech = resampler(speech_array).squeeze().numpy()
-#     bandpass_filter = Filter()
-#     speech = bandpass_filter.process(speech, sampling_rate)
-#     return speech
-
-# def label_to_id(label, label_list):
-
-#     if len(label_list) > 0:
-#         return label_list.index(label) if label in label_list else -1
-
-#     return label
-# def get_features_from_db(path):
-#     id = 'iemocap_' +   os.path.basename(path) + '_'
-#     collection = db.dataset_no_aug.loc[db.dataset_no_aug['_id'] == id].drop(
-#             columns=["_id", "augmented", "label"]).to_numpy()
-#     return collection
-# def preprocess_function(examples):
-#     preprocessor = Preprocessor(scaler=Standard_Scaler())
-#     speech_list = [speech_file_to_array_fn(path) for path in examples[input_column]]
-#     feature_list = [get_features_from_db(path) for path in examples[input_column]]
-    
-#     target_list = [label_to_id(label, label_list) for label in examples[output_column]]
-#     # feature_list = preprocessor.scale(feature_list, target_list)
-#     # feature_list = MinMaxScaler().fit_transform(feature_list, target_list)
-#     result = processor(speech_list, sampling_rate=target_sampling_rate)
-#     result["labels"] = list(target_list)
-#     result['features'] = list(feature_list)
-
-#     return result
-
 
 
 def speech_file_to_array_fn(batch):
@@ -797,37 +615,17 @@ def predict(batch):
     return batch
 
 
-# In[21]:
-
-
 test_dataset = test_dataset.map(speech_file_to_array_fn)
-
-
-# In[ ]:
-
 
 result = test_dataset.map(predict, batched=True, batch_size=8)
 
-
-# In[ ]:
-
-
 label_names = [config.id2label[i] for i in range(config.num_labels)]
-label_names
-
-
-# In[ ]:
-
 
 y_true = [0 if name=='negative' else 1 for name in result["emotion"]]
 y_pred = result["predicted"]
 
 print(y_true[:5])
 print(y_pred[:5])
-
-
-# In[ ]:
-
 
 print(classification_report(y_true, y_pred, target_names=label_names))
 
@@ -872,7 +670,7 @@ os.system("shutdown")
 
 
 # def predict(path, sampling_rate):
-#     speech = speech_file_to_array_fn(path, sampling_rate)
+#     speech = speech_file_to_arrtheay_fn(path, sampling_rate)
 #     features = processor(speech, sampling_rate=sampling_rate, return_tensors="pt", padding=True)
 
 #     input_values = features.input_values.to(device)
