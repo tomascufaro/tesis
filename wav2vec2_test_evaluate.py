@@ -19,7 +19,6 @@ from transformers.models.wav2vec2.feature_extraction_wav2vec2 import (
 )
 import argparse
 
-
 parser = argparse.ArgumentParser(description="Training and evaluation of the model")
 parser.add_argument(
     "-m",
@@ -54,33 +53,37 @@ parser.add_argument(
 
 parser.add_argument(
     "-e",
-    "--evaluate",
-    type=bool,
-    required=False,
-    default=True,
-    help="if False does not evaluate the model",
+    "--no_evaluate",
+    action= 'store_false',
+    dest='TEST',
+    help="Does not evaluate the model",
 )
 
 parser.add_argument(
     "-t",
-    "--train",
-    type=bool,
-    required=False,
-    default=True,
-    help="if False does not train the model",
+    "--no_train",
+    action= 'store_false',\
+    dest='TRAIN',
+    help="Does not train the model",
 )
 
 
 args = parser.parse_args()
-TRAIN = args.train
-EVALUATE = args.evaluate
 base_model = args.base_model
 collection = args.collection
 shutdown = args.shutdown
+TRAIN = args.TRAIN
+TEST = args.TEST
 model_name = base_model.split("/")[-1]
 if args.dataset_size:
     dataset_size = args.dataset_size
-
+else:
+    dataset_size = False
+    
+if TRAIN:
+    print(f'Model {base_model} will be trained')
+if TEST:
+    print(f'Model {base_model} will be evaluated')
 db = Database(collection)
 
 # ## Prepare Data for Training
@@ -629,7 +632,7 @@ if TRAIN:
 
 ## Evaluation
 
-if EVALUATE:
+if TEST:
     import librosa
     from sklearn.metrics import classification_report
 
@@ -641,7 +644,7 @@ if EVALUATE:
     print(f"Device: {device}")
 
     n_checkpoint = 0
-    checkpoints = glob.glob(f"{model_name}checkpoint-*")
+    checkpoints = glob.glob(f"{model_name}/checkpoint-*")
     for checkpoint in checkpoints:
         n = int(checkpoint.split("-")[-1])
         if n > n_checkpoint:
