@@ -18,72 +18,10 @@ from transformers.models.wav2vec2.feature_extraction_wav2vec2 import (
     Wav2Vec2FeatureExtractor,
 )
 import argparse
+from parser import args
 
-parser = argparse.ArgumentParser(description="Training and evaluation of the model")
-parser.add_argument(
-    "-m",
-    "--base_model",
-    default="facebook/wav2vec2-xls-r-300m",
-    required=False,
-    type=str,
-    help="base model from HuggingFace",
-)
-parser.add_argument(
-    "-c",
-    "--collection",
-    type=str,
-    choices=["IEMOCAP", "IEMOCAP_Norm_MinMax", "IEMOCAP_Norm_Std"],
-    required=False,
-    default="IEMOCAP",
-    help="MongoDB Collection for the Database. It can be 'IEMOCAP', 'IEMOCAP_Norm_MinMax' or 'IEMOCAP_Norm_Std'",
-)
-parser.add_argument(
-    "-s",
-    "--shutdown",
-    type=bool,
-    choices=[False, True],
-    default=False,
-    required=False,
-    help="Shut down the computer after the evaluation has finished",
-)
+locals().update(args)
 
-parser.add_argument(
-    "-d", "--dataset_size", type=int, required=False, help="size of the dataset"
-)
-
-parser.add_argument(
-    "-e",
-    "--no_evaluate",
-    action= 'store_false',
-    dest='TEST',
-    help="Does not evaluate the model",
-)
-
-parser.add_argument(
-    "-t",
-    "--no_train",
-    action= 'store_false',\
-    dest='TRAIN',
-    help="Does not train the model",
-)
-
-
-args = parser.parse_args()
-base_model = args.base_model
-collection = args.collection
-shutdown = args.shutdown
-TRAIN = args.TRAIN
-TEST = args.TEST
-model_name = base_model.split("/")[-1]
-if args.dataset_size:
-    dataset_size = args.dataset_size
-else:
-    dataset_size = False
-    
-if TRAIN:
-    print(f'Model {base_model} will be trained')
-if TEST:
-    print(f'Model {base_model} will be evaluated')
 db = Database(collection)
 
 # ## Prepare Data for Training
@@ -220,7 +158,7 @@ eval_dataset = eval_dataset.map(
 
 if dataset_size:
     train_dataset = train_dataset.select(range(dataset_size))
-    eval_dataset = train_dataset.select(range(dataset_size * 0.2))
+    eval_dataset = train_dataset.select(range(int(dataset_size * 0.2)))
 
 # ## Model
 #
@@ -478,14 +416,14 @@ from transformers import TrainingArguments
 
 training_args = TrainingArguments(
     output_dir=model_name,
-    per_device_train_batch_size=2,
-    per_device_eval_batch_size=2,
+    per_device_train_batch_size=batch_size,
+    per_device_eval_batch_size=batch_size,
     gradient_accumulation_steps=2,
     evaluation_strategy="steps",
     num_train_epochs=1.0,
     # fp16=True,
-    save_steps=10,
-    eval_steps=10,
+    save_steps=save_steps,
+    eval_steps=eval_steps,
     logging_steps=10,
     learning_rate=1e-4,
     save_total_limit=2,
