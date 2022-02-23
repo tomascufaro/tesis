@@ -23,9 +23,7 @@ parser.add_argument(
 parser.add_argument(
     "-s",
     "--shutdown",
-    type=bool,
-    choices=[False, True],
-    default=False,
+    action = 'store_true',
     required=False,
     help="Shut down the computer after the evaluation has finished",
 )
@@ -39,10 +37,10 @@ parser.add_argument(
 )
 
 parser.add_argument(
-"--save_step", type=int, required=False, default=20, help="steps for saving a checkpoint while training"
+"--save_steps", type=int, required=False, default=20, help="steps for saving a checkpoint while training"
 )
 parser.add_argument(
-"--eval_step", type=int, required=False, default=20, help="steps for evaluation while training"
+"--eval_steps", type=int, required=False, default=20, help="steps for evaluation while training"
 )
 parser.add_argument(
     "-e",

@@ -19,6 +19,10 @@ from transformers.models.wav2vec2.feature_extraction_wav2vec2 import (
 )
 import argparse
 from parser import args
+TRAIN = True
+TEST = True
+shutdown = False
+
 
 locals().update(args)
 model_name = base_model.split('/')[-1]
