@@ -62,3 +62,4 @@ parser.add_argument(
 
 
 args = parser.parse_args()
+args = vars(args)

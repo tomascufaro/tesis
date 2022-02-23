@@ -21,7 +21,7 @@ import argparse
 from parser import args
 
 locals().update(args)
-
+model_name = base_model.split('/')[-1]
 db = Database(collection)
 
 # ## Prepare Data for Training
