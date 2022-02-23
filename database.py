@@ -134,6 +134,9 @@ class Database:
             dataset_balanced_aug_y,
         )
 
+    def insert_dataframe(self, df):
+        self.collection.insert_many(df.to_dict("records"))
+
 
 if __name__ == "__main__":
     Database("IEMOCAP")
