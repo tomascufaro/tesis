@@ -10,6 +10,8 @@ import numpy as np
 
 
 class Database:
+    '''
+    '''
     load_dotenv()
 
     __USER = os.getenv("DB_USER")

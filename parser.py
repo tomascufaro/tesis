@@ -58,6 +58,13 @@ parser.add_argument(
     help="Does not train the model",
 )
 
+parser.add_argument(
+    "-o",
+    "--no_outliers",
+    action= 'store_false',\
+    dest='OUTLIERS',
+    help="remove outliers",
+)
 
 args = parser.parse_args()
 args = vars(args)

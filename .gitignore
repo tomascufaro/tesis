@@ -5,7 +5,9 @@ wav_mp3.py
 wav2vec_test.py
 requirements.py
 output.txt
-
+IEMOCAP_Norm_Min_Max.json
+IEMOCAP_Norm_Std.json
+IEMOCAP.json
 IEMOCAP_wav/
 IEMOCAP_mp3/
 wav2vec2-xls-r-300m/
