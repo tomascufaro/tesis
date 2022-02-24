@@ -1,164 +1,75 @@
 name	path	emotion
-['Ses05M', 'script03', '2', 'F018']	IEMOCAP_mp3/Ses05M_script03_2_F018_ang.mp3	positive
 ['Ses05M', 'script03', '2', 'M004']	IEMOCAP_mp3/Ses05M_script03_2_M004_fru.mp3	positive
-['Ses04F', 'script02', '1', 'M008']	IEMOCAP_mp3/Ses04F_script02_1_M008_fru.mp3	positive
-['Ses03F', 'impro06', 'M009']	IEMOCAP_mp3/Ses03F_impro06_M009_sad.mp3	negative
-['Ses03F', 'impro06', 'M008']	IEMOCAP_mp3/Ses03F_impro06_M008_sad.mp3	negative
-['Ses01F', 'script02', '1', 'F017']	IEMOCAP_mp3/Ses01F_script02_1_F017_fru.mp3	positive
 ['Ses02M', 'script01', '3', 'M031']	IEMOCAP_mp3/Ses02M_script01_3_M031_sad.mp3	negative
 ['Ses02M', 'impro06', 'F017']	IEMOCAP_mp3/Ses02M_impro06_F017_sad.mp3	negative
 ['Ses05F', 'impro08', 'F002']	IEMOCAP_mp3/Ses05F_impro08_F002_neu.mp3	negative
-['Ses03F', 'script01', '3', 'M009']	IEMOCAP_mp3/Ses03F_script01_3_M009_hap.mp3	negative
-['Ses01F', 'script01', '3', 'F031']	IEMOCAP_mp3/Ses01F_script01_3_F031_neu.mp3	negative
-['Ses05F', 'script02', '2', 'F023']	IEMOCAP_mp3/Ses05F_script02_2_F023_fru.mp3	positive
-['Ses05F', 'script02', '2', 'F016']	IEMOCAP_mp3/Ses05F_script02_2_F016_sad.mp3	negative
 ['Ses01M', 'impro05', 'M009']	IEMOCAP_mp3/Ses01M_impro05_M009_fru.mp3	positive
 ['Ses05M', 'impro07', 'F021']	IEMOCAP_mp3/Ses05M_impro07_F021_exc.mp3	negative
-['Ses03F', 'script03', '2', 'M024']	IEMOCAP_mp3/Ses03F_script03_2_M024_ang.mp3	positive
-['Ses04F', 'impro01', 'M005']	IEMOCAP_mp3/Ses04F_impro01_M005_ang.mp3	positive
-['Ses04M', 'impro04', 'F017']	IEMOCAP_mp3/Ses04M_impro04_F017_neu.mp3	negative
 ['Ses03F', 'impro01', 'M009']	IEMOCAP_mp3/Ses03F_impro01_M009_fru.mp3	positive
 ['Ses01M', 'impro07', 'F014']	IEMOCAP_mp3/Ses01M_impro07_F014_exc.mp3	negative
 ['Ses04F', 'impro08', 'F019']	IEMOCAP_mp3/Ses04F_impro08_F019_fru.mp3	positive
 ['Ses01F', 'impro07', 'M012']	IEMOCAP_mp3/Ses01F_impro07_M012_neu.mp3	negative
-['Ses01M', 'impro06', 'F012']	IEMOCAP_mp3/Ses01M_impro06_F012_neu.mp3	negative
 ['Ses02M', 'script02', '2', 'F037']	IEMOCAP_mp3/Ses02M_script02_2_F037_hap.mp3	negative
-['Ses05M', 'script02', '1', 'M017']	IEMOCAP_mp3/Ses05M_script02_1_M017_exc.mp3	negative
 ['Ses02F', 'script03', '1', 'F025']	IEMOCAP_mp3/Ses02F_script03_1_F025_hap.mp3	negative
-['Ses04F', 'script01', '2', 'F021']	IEMOCAP_mp3/Ses04F_script01_2_F021_fru.mp3	positive
-['Ses05M', 'impro02', 'M011']	IEMOCAP_mp3/Ses05M_impro02_M011_sad.mp3	negative
-['Ses01M', 'impro05', 'F020']	IEMOCAP_mp3/Ses01M_impro05_F020_neu.mp3	negative
-['Ses04M', 'script03', '1', 'F002']	IEMOCAP_mp3/Ses04M_script03_1_F002_fea.mp3	negative
 ['Ses01M', 'script01', '1', 'M031']	IEMOCAP_mp3/Ses01M_script01_1_M031_fru.mp3	positive
-['Ses01M', 'impro03', 'F013']	IEMOCAP_mp3/Ses01M_impro03_F013_exc.mp3	negative
-['Ses05F', 'impro03', 'M045']	IEMOCAP_mp3/Ses05F_impro03_M045_exc.mp3	negative
-['Ses04F', 'impro01', 'M016']	IEMOCAP_mp3/Ses04F_impro01_M016_fru.mp3	positive
-['Ses05M', 'impro05', 'F004']	IEMOCAP_mp3/Ses05M_impro05_F004_neu.mp3	negative
 ['Ses01F', 'impro04', 'F009']	IEMOCAP_mp3/Ses01F_impro04_F009_neu.mp3	negative
-['Ses01F', 'impro05', 'M011']	IEMOCAP_mp3/Ses01F_impro05_M011_neu.mp3	negative
-['Ses04F', 'script01', '2', 'M014']	IEMOCAP_mp3/Ses04F_script01_2_M014_fru.mp3	positive
-['Ses04M', 'impro02', 'M007']	IEMOCAP_mp3/Ses04M_impro02_M007_fru.mp3	positive
-['Ses04F', 'impro03', 'M039']	IEMOCAP_mp3/Ses04F_impro03_M039_exc.mp3	negative
-['Ses05F', 'script02', '1', 'F005']	IEMOCAP_mp3/Ses05F_script02_1_F005_neu.mp3	negative
 ['Ses02F', 'impro02', 'F002']	IEMOCAP_mp3/Ses02F_impro02_F002_sad.mp3	negative
-['Ses03M', 'impro02', 'M005']	IEMOCAP_mp3/Ses03M_impro02_M005_sad.mp3	negative
 ['Ses02M', 'impro04', 'M009']	IEMOCAP_mp3/Ses02M_impro04_M009_fru.mp3	positive
 ['Ses04F', 'script01', '3', 'M026']	IEMOCAP_mp3/Ses04F_script01_3_M026_sad.mp3	negative
-['Ses02F', 'script03', '2', 'M000']	IEMOCAP_mp3/Ses02F_script03_2_M000_neu.mp3	negative
-['Ses01M', 'script01', '3', 'M006']	IEMOCAP_mp3/Ses01M_script01_3_M006_neu.mp3	negative
 ['Ses03M', 'impro05b', 'M005']	IEMOCAP_mp3/Ses03M_impro05b_M005_fru.mp3	positive
-['Ses05M', 'impro01', 'F013']	IEMOCAP_mp3/Ses05M_impro01_F013_fru.mp3	positive
-['Ses05F', 'script01', '3', 'M031']	IEMOCAP_mp3/Ses05F_script01_3_M031_sad.mp3	negative
-['Ses01M', 'impro01', 'M009']	IEMOCAP_mp3/Ses01M_impro01_M009_fru.mp3	positive
-['Ses01F', 'script01', '3', 'F007']	IEMOCAP_mp3/Ses01F_script01_3_F007_neu.mp3	negative
-['Ses04F', 'impro03', 'F043']	IEMOCAP_mp3/Ses04F_impro03_F043_exc.mp3	negative
 ['Ses01M', 'script02', '2', 'M019']	IEMOCAP_mp3/Ses01M_script02_2_M019_neu.mp3	negative
 ['Ses03M', 'script01', '3', 'M021']	IEMOCAP_mp3/Ses03M_script01_3_M021_hap.mp3	negative
-['Ses03M', 'impro08a', 'F013']	IEMOCAP_mp3/Ses03M_impro08a_F013_ang.mp3	positive
-['Ses03M', 'impro08b', 'F014']	IEMOCAP_mp3/Ses03M_impro08b_F014_fru.mp3	positive
-['Ses01F', 'script02', '1', 'M024']	IEMOCAP_mp3/Ses01F_script02_1_M024_neu.mp3	negative
-['Ses03F', 'impro03', 'F021']	IEMOCAP_mp3/Ses03F_impro03_F021_hap.mp3	negative
-['Ses05M', 'script01', '1b', 'F024']	IEMOCAP_mp3/Ses05M_script01_1b_F024_neu.mp3	negative
-['Ses04M', 'impro01', 'M010']	IEMOCAP_mp3/Ses04M_impro01_M010_fru.mp3	positive
 ['Ses04F', 'script03', '1', 'F029']	IEMOCAP_mp3/Ses04F_script03_1_F029_exc.mp3	negative
 ['Ses04F', 'impro03', 'M032']	IEMOCAP_mp3/Ses04F_impro03_M032_neu.mp3	negative
 ['Ses02F', 'impro01', 'F018']	IEMOCAP_mp3/Ses02F_impro01_F018_ang.mp3	positive
 ['Ses02F', 'script01', '1', 'M033']	IEMOCAP_mp3/Ses02F_script01_1_M033_fru.mp3	positive
 ['Ses04M', 'impro07', 'F002']	IEMOCAP_mp3/Ses04M_impro07_F002_exc.mp3	negative
-['Ses04M', 'script03', '2', 'F043']	IEMOCAP_mp3/Ses04M_script03_2_F043_neu.mp3	negative
 ['Ses02F', 'impro03', 'F027']	IEMOCAP_mp3/Ses02F_impro03_F027_hap.mp3	negative
 ['Ses02F', 'script01', '1', 'F030']	IEMOCAP_mp3/Ses02F_script01_1_F030_fru.mp3	positive
-['Ses04M', 'script03', '2', 'M024']	IEMOCAP_mp3/Ses04M_script03_2_M024_ang.mp3	positive
-['Ses03F', 'impro04', 'F006']	IEMOCAP_mp3/Ses03F_impro04_F006_fru.mp3	positive
-['Ses04F', 'script03', '1', 'F009']	IEMOCAP_mp3/Ses04F_script03_1_F009_exc.mp3	negative
-['Ses03F', 'script03', '2', 'F022']	IEMOCAP_mp3/Ses03F_script03_2_F022_fru.mp3	positive
-['Ses05M', 'impro08', 'M016']	IEMOCAP_mp3/Ses05M_impro08_M016_neu.mp3	negative
-['Ses03F', 'impro02', 'F014']	IEMOCAP_mp3/Ses03F_impro02_F014_fru.mp3	positive
 ['Ses03M', 'script03', '2', 'M010']	IEMOCAP_mp3/Ses03M_script03_2_M010_neu.mp3	negative
 ['Ses01F', 'script02', '2', 'F022']	IEMOCAP_mp3/Ses01F_script02_2_F022_sad.mp3	negative
 ['Ses01F', 'script02', '1', 'F009']	IEMOCAP_mp3/Ses01F_script02_1_F009_hap.mp3	negative
-['Ses03F', 'script02', '2', 'F005']	IEMOCAP_mp3/Ses03F_script02_2_F005_ang.mp3	positive
-['Ses03M', 'script02', '2', 'M013']	IEMOCAP_mp3/Ses03M_script02_2_M013_fru.mp3	positive
-['Ses04F', 'script01', '1', 'F015']	IEMOCAP_mp3/Ses04F_script01_1_F015_ang.mp3	positive
-['Ses01M', 'impro07', 'F000']	IEMOCAP_mp3/Ses01M_impro07_F000_neu.mp3	negative
 ['Ses05F', 'script03', '2', 'F022']	IEMOCAP_mp3/Ses05F_script03_2_F022_neu.mp3	negative
 ['Ses04F', 'impro07', 'F009']	IEMOCAP_mp3/Ses04F_impro07_F009_exc.mp3	negative
 ['Ses04F', 'impro03', 'M038']	IEMOCAP_mp3/Ses04F_impro03_M038_exc.mp3	negative
-['Ses02F', 'impro07', 'M034']	IEMOCAP_mp3/Ses02F_impro07_M034_exc.mp3	negative
-['Ses01F', 'script01', '1', 'F037']	IEMOCAP_mp3/Ses01F_script01_1_F037_ang.mp3	positive
 ['Ses05M', 'script01', '3', 'F025']	IEMOCAP_mp3/Ses05M_script01_3_F025_sad.mp3	negative
-['Ses05F', 'script01', '1', 'M011']	IEMOCAP_mp3/Ses05F_script01_1_M011_fru.mp3	positive
-['Ses03F', 'script01', '1', 'M007']	IEMOCAP_mp3/Ses03F_script01_1_M007_neu.mp3	negative
 ['Ses04F', 'script02', '2', 'F019']	IEMOCAP_mp3/Ses04F_script02_2_F019_sad.mp3	negative
-['Ses02F', 'impro08', 'F000']	IEMOCAP_mp3/Ses02F_impro08_F000_neu.mp3	negative
 ['Ses04F', 'impro08', 'F010']	IEMOCAP_mp3/Ses04F_impro08_F010_fru.mp3	positive
-['Ses03F', 'script01', '1', 'M002']	IEMOCAP_mp3/Ses03F_script01_1_M002_neu.mp3	negative
 ['Ses05F', 'script01', '3', 'F015']	IEMOCAP_mp3/Ses05F_script01_3_F015_hap.mp3	negative
 ['Ses02M', 'script02', '1', 'M016']	IEMOCAP_mp3/Ses02M_script02_1_M016_exc.mp3	negative
 ['Ses01F', 'impro05', 'F002']	IEMOCAP_mp3/Ses01F_impro05_F002_fru.mp3	positive
-['Ses05F', 'script02', '2', 'M009']	IEMOCAP_mp3/Ses05F_script02_2_M009_fru.mp3	positive
-['Ses01M', 'impro04', 'M012']	IEMOCAP_mp3/Ses01M_impro04_M012_fru.mp3	positive
-['Ses04F', 'impro06', 'F009']	IEMOCAP_mp3/Ses04F_impro06_F009_hap.mp3	negative
 ['Ses02F', 'script01', '2', 'M009']	IEMOCAP_mp3/Ses02F_script01_2_M009_fru.mp3	positive
 ['Ses04F', 'script02', '1', 'M031']	IEMOCAP_mp3/Ses04F_script02_1_M031_ang.mp3	positive
-['Ses02M', 'script03', '2', 'F011']	IEMOCAP_mp3/Ses02M_script03_2_F011_neu.mp3	negative
-['Ses02M', 'impro04', 'F003']	IEMOCAP_mp3/Ses02M_impro04_F003_neu.mp3	negative
-['Ses05M', 'impro05', 'F002']	IEMOCAP_mp3/Ses05M_impro05_F002_neu.mp3	negative
 ['Ses02M', 'impro04', 'M020']	IEMOCAP_mp3/Ses02M_impro04_M020_fru.mp3	positive
 ['Ses05M', 'impro05', 'F012']	IEMOCAP_mp3/Ses05M_impro05_F012_neu.mp3	negative
-['Ses03M', 'impro06', 'F001']	IEMOCAP_mp3/Ses03M_impro06_F001_sad.mp3	negative
-['Ses01F', 'impro04', 'F031']	IEMOCAP_mp3/Ses01F_impro04_F031_ang.mp3	positive
 ['Ses03F', 'script01', '3', 'F002']	IEMOCAP_mp3/Ses03F_script01_3_F002_hap.mp3	negative
-['Ses01F', 'script01', '1', 'F023']	IEMOCAP_mp3/Ses01F_script01_1_F023_fru.mp3	positive
 ['Ses03F', 'impro06', 'M014']	IEMOCAP_mp3/Ses03F_impro06_M014_sad.mp3	negative
-['Ses01F', 'script02', '1', 'M020']	IEMOCAP_mp3/Ses01F_script02_1_M020_neu.mp3	negative
-['Ses05F', 'impro07', 'F006']	IEMOCAP_mp3/Ses05F_impro07_F006_hap.mp3	negative
-['Ses03F', 'impro07', 'M015']	IEMOCAP_mp3/Ses03F_impro07_M015_exc.mp3	negative
-['Ses01F', 'script03', '1', 'M007']	IEMOCAP_mp3/Ses01F_script03_1_M007_hap.mp3	negative
 ['Ses02F', 'impro06', 'F003']	IEMOCAP_mp3/Ses02F_impro06_F003_sad.mp3	negative
 ['Ses01M', 'script02', '2', 'F029']	IEMOCAP_mp3/Ses01M_script02_2_F029_fru.mp3	positive
 ['Ses02F', 'script01', '1', 'M043']	IEMOCAP_mp3/Ses02F_script01_1_M043_neu.mp3	negative
-['Ses02F', 'script01', '3', 'M025']	IEMOCAP_mp3/Ses02F_script01_3_M025_sad.mp3	negative
 ['Ses01F', 'impro01', 'M006']	IEMOCAP_mp3/Ses01F_impro01_M006_fru.mp3	positive
 ['Ses01F', 'script03', '2', 'F000']	IEMOCAP_mp3/Ses01F_script03_2_F000_hap.mp3	negative
 ['Ses02F', 'script03', '1', 'F006']	IEMOCAP_mp3/Ses02F_script03_1_F006_hap.mp3	negative
 ['Ses05F', 'impro04', 'M010']	IEMOCAP_mp3/Ses05F_impro04_M010_neu.mp3	negative
-['Ses01M', 'impro07', 'F025']	IEMOCAP_mp3/Ses01M_impro07_F025_exc.mp3	negative
 ['Ses03M', 'impro05b', 'F021']	IEMOCAP_mp3/Ses03M_impro05b_F021_neu.mp3	negative
-['Ses04F', 'script02', '2', 'F028']	IEMOCAP_mp3/Ses04F_script02_2_F028_fru.mp3	positive
 ['Ses01F', 'script03', '2', 'M024']	IEMOCAP_mp3/Ses01F_script03_2_M024_ang.mp3	positive
 ['Ses03F', 'script01', '1', 'F030']	IEMOCAP_mp3/Ses03F_script01_1_F030_neu.mp3	negative
 ['Ses05F', 'script01', '1', 'M035']	IEMOCAP_mp3/Ses05F_script01_1_M035_ang.mp3	positive
-['Ses02F', 'script01', '1', 'F037']	IEMOCAP_mp3/Ses02F_script01_1_F037_ang.mp3	positive
 ['Ses05M', 'script03', '2', 'M032']	IEMOCAP_mp3/Ses05M_script03_2_M032_ang.mp3	positive
 ['Ses02F', 'script01', '1', 'F005']	IEMOCAP_mp3/Ses02F_script01_1_F005_sad.mp3	negative
 ['Ses04M', 'script03', '2', 'M054']	IEMOCAP_mp3/Ses04M_script03_2_M054_ang.mp3	positive
-['Ses01F', 'impro02', 'F017']	IEMOCAP_mp3/Ses01F_impro02_F017_sad.mp3	negative
 ['Ses01M', 'script01', '1', 'M030']	IEMOCAP_mp3/Ses01M_script01_1_M030_fru.mp3	positive
-['Ses05M', 'impro07', 'F038']	IEMOCAP_mp3/Ses05M_impro07_F038_neu.mp3	negative
-['Ses03F', 'impro04', 'M009']	IEMOCAP_mp3/Ses03F_impro04_M009_neu.mp3	negative
-['Ses01M', 'impro03', 'M016']	IEMOCAP_mp3/Ses01M_impro03_M016_exc.mp3	negative
 ['Ses01F', 'script03', '2', 'F036']	IEMOCAP_mp3/Ses01F_script03_2_F036_ang.mp3	positive
-['Ses03M', 'impro07', 'M017']	IEMOCAP_mp3/Ses03M_impro07_M017_exc.mp3	negative
-['Ses04M', 'impro03', 'M025']	IEMOCAP_mp3/Ses04M_impro03_M025_hap.mp3	negative
 ['Ses03F', 'impro06', 'F004']	IEMOCAP_mp3/Ses03F_impro06_F004_sad.mp3	negative
 ['Ses05F', 'script02', '1', 'M014']	IEMOCAP_mp3/Ses05F_script02_1_M014_exc.mp3	negative
 ['Ses05M', 'impro03', 'F010']	IEMOCAP_mp3/Ses05M_impro03_F010_hap.mp3	negative
-['Ses01M', 'script01', '1', 'F020']	IEMOCAP_mp3/Ses01M_script01_1_F020_ang.mp3	positive
-['Ses03M', 'impro08a', 'F014']	IEMOCAP_mp3/Ses03M_impro08a_F014_ang.mp3	positive
-['Ses03F', 'script01', '2', 'M007']	IEMOCAP_mp3/Ses03F_script01_2_M007_neu.mp3	negative
 ['Ses02F', 'script01', '1', 'F004']	IEMOCAP_mp3/Ses02F_script01_1_F004_sad.mp3	negative
-['Ses04F', 'impro07', 'M017']	IEMOCAP_mp3/Ses04F_impro07_M017_neu.mp3	negative
-['Ses02F', 'impro04', 'M004']	IEMOCAP_mp3/Ses02F_impro04_M004_neu.mp3	negative
-['Ses05F', 'impro02', 'M029']	IEMOCAP_mp3/Ses05F_impro02_M029_sad.mp3	negative
 ['Ses03M', 'impro02', 'M000']	IEMOCAP_mp3/Ses03M_impro02_M000_sad.mp3	negative
 ['Ses01F', 'script02', '2', 'F027']	IEMOCAP_mp3/Ses01F_script02_2_F027_fru.mp3	positive
 ['Ses03M', 'impro07', 'F023']	IEMOCAP_mp3/Ses03M_impro07_F023_neu.mp3	negative
 ['Ses03F', 'impro05', 'F011']	IEMOCAP_mp3/Ses03F_impro05_F011_ang.mp3	positive
-['Ses05F', 'impro07', 'F038']	IEMOCAP_mp3/Ses05F_impro07_F038_exc.mp3	negative
 ['Ses02M', 'script02', '1', 'F000']	IEMOCAP_mp3/Ses02M_script02_1_F000_neu.mp3	negative
 ['Ses03M', 'script02', '1', 'M005']	IEMOCAP_mp3/Ses03M_script02_1_M005_exc.mp3	negative
-['Ses03M', 'impro02', 'M006']	IEMOCAP_mp3/Ses03M_impro02_M006_sad.mp3	negative
 ['Ses02F', 'impro05', 'F011']	IEMOCAP_mp3/Ses02F_impro05_F011_fru.mp3	positive
 ['Ses01M', 'script02', '1', 'M041']	IEMOCAP_mp3/Ses01M_script02_1_M041_exc.mp3	negative
 ['Ses04F', 'script01', '1', 'M026']	IEMOCAP_mp3/Ses04F_script01_1_M026_sad.mp3	negative
@@ -167,588 +78,300 @@ name	path	emotion
 ['Ses02F', 'script03', '2', 'M047']	IEMOCAP_mp3/Ses02F_script03_2_M047_ang.mp3	positive
 ['Ses04F', 'script02', '1', 'F021']	IEMOCAP_mp3/Ses04F_script02_1_F021_ang.mp3	positive
 ['Ses04F', 'script03', '2', 'F013']	IEMOCAP_mp3/Ses04F_script03_2_F013_ang.mp3	positive
-['Ses03F', 'impro07', 'M003']	IEMOCAP_mp3/Ses03F_impro07_M003_neu.mp3	negative
-['Ses04M', 'script03', '2', 'M022']	IEMOCAP_mp3/Ses04M_script03_2_M022_ang.mp3	positive
-['Ses03M', 'impro08b', 'M013']	IEMOCAP_mp3/Ses03M_impro08b_M013_neu.mp3	negative
 ['Ses05F', 'impro07', 'M009']	IEMOCAP_mp3/Ses05F_impro07_M009_exc.mp3	negative
 ['Ses04M', 'script02', '2', 'M025']	IEMOCAP_mp3/Ses04M_script02_2_M025_fru.mp3	positive
-['Ses05F', 'impro03', 'F040']	IEMOCAP_mp3/Ses05F_impro03_F040_hap.mp3	negative
-['Ses02M', 'impro07', 'M013']	IEMOCAP_mp3/Ses02M_impro07_M013_exc.mp3	negative
-['Ses02F', 'script03', '2', 'M045']	IEMOCAP_mp3/Ses02F_script03_2_M045_ang.mp3	positive
 ['Ses02F', 'impro01', 'F010']	IEMOCAP_mp3/Ses02F_impro01_F010_fru.mp3	positive
-['Ses01M', 'impro01', 'M010']	IEMOCAP_mp3/Ses01M_impro01_M010_neu.mp3	negative
-['Ses03M', 'impro04', 'F025']	IEMOCAP_mp3/Ses03M_impro04_F025_neu.mp3	negative
-['Ses05F', 'impro05', 'F017']	IEMOCAP_mp3/Ses05F_impro05_F017_fru.mp3	positive
 ['Ses04F', 'impro07', 'F038']	IEMOCAP_mp3/Ses04F_impro07_F038_exc.mp3	negative
-['Ses05F', 'script03', '2', 'F034']	IEMOCAP_mp3/Ses05F_script03_2_F034_ang.mp3	positive
 ['Ses05M', 'impro08', 'M026']	IEMOCAP_mp3/Ses05M_impro08_M026_hap.mp3	negative
 ['Ses05F', 'impro01', 'F002']	IEMOCAP_mp3/Ses05F_impro01_F002_fru.mp3	positive
-['Ses04F', 'script02', '1', 'M026']	IEMOCAP_mp3/Ses04F_script02_1_M026_exc.mp3	negative
-['Ses01M', 'script01', '3', 'M025']	IEMOCAP_mp3/Ses01M_script01_3_M025_sad.mp3	negative
-['Ses04M', 'impro02', 'M029']	IEMOCAP_mp3/Ses04M_impro02_M029_fru.mp3	positive
-['Ses02F', 'impro08', 'F017']	IEMOCAP_mp3/Ses02F_impro08_F017_neu.mp3	negative
 ['Ses01M', 'script03', '1', 'F001']	IEMOCAP_mp3/Ses01M_script03_1_F001_fea.mp3	negative
-['Ses01F', 'impro05', 'M000']	IEMOCAP_mp3/Ses01F_impro05_M000_neu.mp3	negative
-['Ses01M', 'script01', '3', 'M022']	IEMOCAP_mp3/Ses01M_script01_3_M022_sad.mp3	negative
 ['Ses04M', 'script01', '1', 'F036']	IEMOCAP_mp3/Ses04M_script01_1_F036_ang.mp3	positive
-['Ses03M', 'impro01', 'M005']	IEMOCAP_mp3/Ses03M_impro01_M005_fru.mp3	positive
-['Ses05M', 'impro03', 'M030']	IEMOCAP_mp3/Ses05M_impro03_M030_hap.mp3	negative
 ['Ses02F', 'script03', '2', 'M029']	IEMOCAP_mp3/Ses02F_script03_2_M029_fru.mp3	positive
 ['Ses04M', 'impro05', 'M037']	IEMOCAP_mp3/Ses04M_impro05_M037_fru.mp3	positive
-['Ses05M', 'impro03', 'F021']	IEMOCAP_mp3/Ses05M_impro03_F021_hap.mp3	negative
-['Ses02F', 'impro05', 'M017']	IEMOCAP_mp3/Ses02F_impro05_M017_neu.mp3	negative
 ['Ses05F', 'impro04', 'F033']	IEMOCAP_mp3/Ses05F_impro04_F033_fru.mp3	positive
 ['Ses01F', 'script02', '1', 'M011']	IEMOCAP_mp3/Ses01F_script02_1_M011_neu.mp3	negative
 ['Ses02F', 'script02', '2', 'M026']	IEMOCAP_mp3/Ses02F_script02_2_M026_fru.mp3	positive
 ['Ses05F', 'impro08', 'F028']	IEMOCAP_mp3/Ses05F_impro08_F028_neu.mp3	negative
-['Ses02F', 'impro03', 'M018']	IEMOCAP_mp3/Ses02F_impro03_M018_neu.mp3	negative
 ['Ses04M', 'script01', '1', 'M033']	IEMOCAP_mp3/Ses04M_script01_1_M033_fru.mp3	positive
 ['Ses02M', 'impro01', 'F015']	IEMOCAP_mp3/Ses02M_impro01_F015_neu.mp3	negative
-['Ses05F', 'script03', '1', 'M026']	IEMOCAP_mp3/Ses05F_script03_1_M026_exc.mp3	negative
 ['Ses04F', 'impro04', 'F021']	IEMOCAP_mp3/Ses04F_impro04_F021_fru.mp3	positive
 ['Ses04F', 'impro03', 'F012']	IEMOCAP_mp3/Ses04F_impro03_F012_hap.mp3	negative
 ['Ses05M', 'script02', '1', 'M020']	IEMOCAP_mp3/Ses05M_script02_1_M020_exc.mp3	negative
 ['Ses04M', 'impro03', 'F011']	IEMOCAP_mp3/Ses04M_impro03_F011_exc.mp3	negative
 ['Ses02F', 'impro06', 'F000']	IEMOCAP_mp3/Ses02F_impro06_F000_sad.mp3	negative
 ['Ses01F', 'impro03', 'M001']	IEMOCAP_mp3/Ses01F_impro03_M001_neu.mp3	negative
-['Ses01M', 'script03', '2', 'M036']	IEMOCAP_mp3/Ses01M_script03_2_M036_ang.mp3	positive
-['Ses02M', 'impro03', 'M018']	IEMOCAP_mp3/Ses02M_impro03_M018_exc.mp3	negative
-['Ses01M', 'script03', '1', 'F030']	IEMOCAP_mp3/Ses01M_script03_1_F030_hap.mp3	negative
-['Ses02F', 'impro05', 'F002']	IEMOCAP_mp3/Ses02F_impro05_F002_sur.mp3	negative
-['Ses05M', 'impro08', 'F009']	IEMOCAP_mp3/Ses05M_impro08_F009_neu.mp3	negative
-['Ses01F', 'script03', '2', 'M018']	IEMOCAP_mp3/Ses01F_script03_2_M018_neu.mp3	negative
 ['Ses01M', 'script03', '1', 'M030']	IEMOCAP_mp3/Ses01M_script03_1_M030_hap.mp3	negative
 ['Ses01M', 'impro05', 'F027']	IEMOCAP_mp3/Ses01M_impro05_F027_neu.mp3	negative
-['Ses03M', 'script02', '2', 'F033']	IEMOCAP_mp3/Ses03M_script02_2_F033_ang.mp3	positive
-['Ses04F', 'script01', '1', 'F004']	IEMOCAP_mp3/Ses04F_script01_1_F004_sad.mp3	negative
 ['Ses03M', 'script01', '1', 'M029']	IEMOCAP_mp3/Ses03M_script01_1_M029_neu.mp3	negative
 ['Ses01F', 'script03', '2', 'F027']	IEMOCAP_mp3/Ses01F_script03_2_F027_ang.mp3	positive
-['Ses05M', 'script03', '1', 'F001']	IEMOCAP_mp3/Ses05M_script03_1_F001_exc.mp3	negative
 ['Ses04F', 'script02', '1', 'F007']	IEMOCAP_mp3/Ses04F_script02_1_F007_ang.mp3	positive
 ['Ses01F', 'impro05', 'M027']	IEMOCAP_mp3/Ses01F_impro05_M027_neu.mp3	negative
-['Ses03F', 'script02', '1', 'M001']	IEMOCAP_mp3/Ses03F_script02_1_M001_exc.mp3	negative
 ['Ses04F', 'script02', '1', 'F015']	IEMOCAP_mp3/Ses04F_script02_1_F015_fru.mp3	positive
-['Ses02F', 'script02', '1', 'F015']	IEMOCAP_mp3/Ses02F_script02_1_F015_fru.mp3	positive
-['Ses01F', 'script03', '1', 'F022']	IEMOCAP_mp3/Ses01F_script03_1_F022_hap.mp3	negative
 ['Ses01M', 'impro01', 'M031']	IEMOCAP_mp3/Ses01M_impro01_M031_ang.mp3	positive
 ['Ses05F', 'impro04', 'M031']	IEMOCAP_mp3/Ses05F_impro04_M031_neu.mp3	negative
-['Ses02F', 'impro08', 'M004']	IEMOCAP_mp3/Ses02F_impro08_M004_fru.mp3	positive
 ['Ses05M', 'impro08', 'F007']	IEMOCAP_mp3/Ses05M_impro08_F007_neu.mp3	negative
 ['Ses03F', 'impro05', 'F007']	IEMOCAP_mp3/Ses03F_impro05_F007_ang.mp3	positive
 ['Ses05F', 'impro07', 'F028']	IEMOCAP_mp3/Ses05F_impro07_F028_exc.mp3	negative
 ['Ses05F', 'script03', '2', 'F010']	IEMOCAP_mp3/Ses05F_script03_2_F010_neu.mp3	negative
 ['Ses05M', 'script03', '1', 'M018']	IEMOCAP_mp3/Ses05M_script03_1_M018_exc.mp3	negative
-['Ses02F', 'impro07', 'M002']	IEMOCAP_mp3/Ses02F_impro07_M002_exc.mp3	negative
-['Ses04F', 'script03', '1', 'F012']	IEMOCAP_mp3/Ses04F_script03_1_F012_neu.mp3	negative
-['Ses04F', 'script02', '1', 'F022']	IEMOCAP_mp3/Ses04F_script02_1_F022_ang.mp3	positive
-['Ses01F', 'impro03', 'F012']	IEMOCAP_mp3/Ses01F_impro03_F012_hap.mp3	negative
-['Ses03M', 'impro05b', 'F007']	IEMOCAP_mp3/Ses03M_impro05b_F007_neu.mp3	negative
 ['Ses05F', 'impro02', 'F034']	IEMOCAP_mp3/Ses05F_impro02_F034_sad.mp3	negative
-['Ses05M', 'script01', '1', 'M016']	IEMOCAP_mp3/Ses05M_script01_1_M016_neu.mp3	negative
 ['Ses04F', 'script01', '2', 'M016']	IEMOCAP_mp3/Ses04F_script01_2_M016_fru.mp3	positive
-['Ses05F', 'impro05', 'M044']	IEMOCAP_mp3/Ses05F_impro05_M044_fru.mp3	positive
-['Ses04F', 'script02', '2', 'F031']	IEMOCAP_mp3/Ses04F_script02_2_F031_ang.mp3	positive
 ['Ses01F', 'script02', '2', 'M032']	IEMOCAP_mp3/Ses01F_script02_2_M032_fru.mp3	positive
 ['Ses04F', 'impro07', 'F011']	IEMOCAP_mp3/Ses04F_impro07_F011_exc.mp3	negative
 ['Ses02F', 'script03', '1', 'F005']	IEMOCAP_mp3/Ses02F_script03_1_F005_exc.mp3	negative
 ['Ses05M', 'impro04', 'F009']	IEMOCAP_mp3/Ses05M_impro04_F009_neu.mp3	negative
 ['Ses05M', 'script03', '2', 'M035']	IEMOCAP_mp3/Ses05M_script03_2_M035_ang.mp3	positive
-['Ses04F', 'script01', '1', 'M014']	IEMOCAP_mp3/Ses04F_script01_1_M014_fru.mp3	positive
 ['Ses05F', 'impro08', 'F017']	IEMOCAP_mp3/Ses05F_impro08_F017_neu.mp3	negative
 ['Ses04M', 'impro05', 'F028']	IEMOCAP_mp3/Ses04M_impro05_F028_fru.mp3	positive
-['Ses03M', 'script02', '2', 'M025']	IEMOCAP_mp3/Ses03M_script02_2_M025_fru.mp3	positive
 ['Ses03F', 'script03', '2', 'M027']	IEMOCAP_mp3/Ses03F_script03_2_M027_ang.mp3	positive
 ['Ses02M', 'impro06', 'F010']	IEMOCAP_mp3/Ses02M_impro06_F010_sad.mp3	negative
 ['Ses05F', 'impro01', 'M020']	IEMOCAP_mp3/Ses05F_impro01_M020_fru.mp3	positive
-['Ses04F', 'script03', '1', 'F026']	IEMOCAP_mp3/Ses04F_script03_1_F026_exc.mp3	negative
-['Ses02M', 'impro03', 'M028']	IEMOCAP_mp3/Ses02M_impro03_M028_hap.mp3	negative
-['Ses05M', 'impro05', 'M016']	IEMOCAP_mp3/Ses05M_impro05_M016_fru.mp3	positive
 ['Ses05M', 'script02', '2', 'M032']	IEMOCAP_mp3/Ses05M_script02_2_M032_sad.mp3	negative
 ['Ses03M', 'impro06', 'F004']	IEMOCAP_mp3/Ses03M_impro06_F004_sad.mp3	negative
-['Ses05F', 'script01', '2', 'M016']	IEMOCAP_mp3/Ses05F_script01_2_M016_ang.mp3	positive
 ['Ses03M', 'impro02', 'M035']	IEMOCAP_mp3/Ses03M_impro02_M035_fru.mp3	positive
-['Ses04M', 'script02', '1', 'F016']	IEMOCAP_mp3/Ses04M_script02_1_F016_fru.mp3	positive
 ['Ses01M', 'impro01', 'M032']	IEMOCAP_mp3/Ses01M_impro01_M032_ang.mp3	positive
-['Ses02M', 'script01', '1', 'M023']	IEMOCAP_mp3/Ses02M_script01_1_M023_fru.mp3	positive
 ['Ses05M', 'script01', '1b', 'F035']	IEMOCAP_mp3/Ses05M_script01_1b_F035_fru.mp3	positive
-['Ses04F', 'impro08', 'M014']	IEMOCAP_mp3/Ses04F_impro08_M014_ang.mp3	positive
 ['Ses04M', 'script03', '2', 'M030']	IEMOCAP_mp3/Ses04M_script03_2_M030_ang.mp3	positive
-['Ses04M', 'impro06', 'M003']	IEMOCAP_mp3/Ses04M_impro06_M003_sad.mp3	negative
 ['Ses03F', 'impro08', 'F001']	IEMOCAP_mp3/Ses03F_impro08_F001_neu.mp3	negative
 ['Ses03M', 'impro05b', 'M030']	IEMOCAP_mp3/Ses03M_impro05b_M030_fru.mp3	positive
 ['Ses03M', 'impro02', 'M022']	IEMOCAP_mp3/Ses03M_impro02_M022_fru.mp3	positive
-['Ses03M', 'impro02', 'M036']	IEMOCAP_mp3/Ses03M_impro02_M036_fru.mp3	positive
-['Ses03M', 'script02', '2', 'F024']	IEMOCAP_mp3/Ses03M_script02_2_F024_sad.mp3	negative
 ['Ses01F', 'script02', '1', 'F014']	IEMOCAP_mp3/Ses01F_script02_1_F014_fru.mp3	positive
 ['Ses04M', 'script02', '1', 'M023']	IEMOCAP_mp3/Ses04M_script02_1_M023_exc.mp3	negative
 ['Ses03M', 'script02', '2', 'F042']	IEMOCAP_mp3/Ses03M_script02_2_F042_hap.mp3	negative
 ['Ses04M', 'script01', '3', 'M025']	IEMOCAP_mp3/Ses04M_script01_3_M025_sad.mp3	negative
 ['Ses05F', 'script01', '2', 'F006']	IEMOCAP_mp3/Ses05F_script01_2_F006_ang.mp3	positive
 ['Ses03M', 'impro04', 'F007']	IEMOCAP_mp3/Ses03M_impro04_F007_sad.mp3	negative
-['Ses03M', 'impro05b', 'F012']	IEMOCAP_mp3/Ses03M_impro05b_F012_neu.mp3	negative
-['Ses04M', 'impro04', 'M013']	IEMOCAP_mp3/Ses04M_impro04_M013_fru.mp3	positive
 ['Ses02M', 'script01', '2', 'M010']	IEMOCAP_mp3/Ses02M_script01_2_M010_fru.mp3	positive
 ['Ses02M', 'impro06', 'M008']	IEMOCAP_mp3/Ses02M_impro06_M008_sad.mp3	negative
-['Ses01M', 'script02', '2', 'M045']	IEMOCAP_mp3/Ses01M_script02_2_M045_sad.mp3	negative
 ['Ses04F', 'impro07', 'M031']	IEMOCAP_mp3/Ses04F_impro07_M031_neu.mp3	negative
 ['Ses04M', 'impro07', 'M003']	IEMOCAP_mp3/Ses04M_impro07_M003_exc.mp3	negative
-['Ses04M', 'impro08', 'M001']	IEMOCAP_mp3/Ses04M_impro08_M001_neu.mp3	negative
-['Ses03M', 'impro08a', 'M017']	IEMOCAP_mp3/Ses03M_impro08a_M017_neu.mp3	negative
-['Ses05M', 'script01', '3', 'F015']	IEMOCAP_mp3/Ses05M_script01_3_F015_exc.mp3	negative
 ['Ses03M', 'impro05b', 'F023']	IEMOCAP_mp3/Ses03M_impro05b_F023_neu.mp3	negative
-['Ses05F', 'impro05', 'M001']	IEMOCAP_mp3/Ses05F_impro05_M001_neu.mp3	negative
 ['Ses03M', 'script03', '2', 'F044']	IEMOCAP_mp3/Ses03M_script03_2_F044_ang.mp3	positive
 ['Ses02M', 'impro05', 'F001']	IEMOCAP_mp3/Ses02M_impro05_F001_neu.mp3	negative
 ['Ses03M', 'impro07', 'M024']	IEMOCAP_mp3/Ses03M_impro07_M024_exc.mp3	negative
-['Ses03M', 'script02', '1', 'M000']	IEMOCAP_mp3/Ses03M_script02_1_M000_exc.mp3	negative
-['Ses01M', 'impro03', 'M012']	IEMOCAP_mp3/Ses01M_impro03_M012_exc.mp3	negative
-['Ses01F', 'script03', '1', 'M024']	IEMOCAP_mp3/Ses01F_script03_1_M024_exc.mp3	negative
-['Ses04F', 'script01', '2', 'M015']	IEMOCAP_mp3/Ses04F_script01_2_M015_fru.mp3	positive
-['Ses02F', 'impro07', 'F020']	IEMOCAP_mp3/Ses02F_impro07_F020_exc.mp3	negative
 ['Ses03M', 'impro02', 'M017']	IEMOCAP_mp3/Ses03M_impro02_M017_fru.mp3	positive
 ['Ses03M', 'script02', '2', 'M037']	IEMOCAP_mp3/Ses03M_script02_2_M037_sad.mp3	negative
-['Ses02F', 'impro02', 'F005']	IEMOCAP_mp3/Ses02F_impro02_F005_sad.mp3	negative
 ['Ses05F', 'impro02', 'M041']	IEMOCAP_mp3/Ses05F_impro02_M041_sad.mp3	negative
-['Ses05M', 'script03', '2', 'M008']	IEMOCAP_mp3/Ses05M_script03_2_M008_ang.mp3	positive
 ['Ses04M', 'impro02', 'F021']	IEMOCAP_mp3/Ses04M_impro02_F021_ang.mp3	positive
 ['Ses05F', 'impro05', 'F020']	IEMOCAP_mp3/Ses05F_impro05_F020_ang.mp3	positive
-['Ses05M', 'impro03', 'F000']	IEMOCAP_mp3/Ses05M_impro03_F000_neu.mp3	negative
 ['Ses05F', 'impro08', 'F004']	IEMOCAP_mp3/Ses05F_impro08_F004_neu.mp3	negative
 ['Ses05M', 'script01', '3', 'F021']	IEMOCAP_mp3/Ses05M_script01_3_F021_sad.mp3	negative
-['Ses05F', 'impro02', 'M015']	IEMOCAP_mp3/Ses05F_impro02_M015_ang.mp3	positive
 ['Ses02M', 'script01', '1', 'M039']	IEMOCAP_mp3/Ses02M_script01_1_M039_ang.mp3	positive
-['Ses02M', 'script02', '2', 'F042']	IEMOCAP_mp3/Ses02M_script02_2_F042_hap.mp3	negative
-['Ses05F', 'impro03', 'F031']	IEMOCAP_mp3/Ses05F_impro03_F031_hap.mp3	negative
-['Ses03F', 'script02', '2', 'M022']	IEMOCAP_mp3/Ses03F_script02_2_M022_fru.mp3	positive
-['Ses01M', 'script03', '1', 'F037']	IEMOCAP_mp3/Ses01M_script03_1_F037_hap.mp3	negative
-['Ses05M', 'script03', '1', 'F015']	IEMOCAP_mp3/Ses05M_script03_1_F015_neu.mp3	negative
-['Ses01F', 'script01', '1', 'F024']	IEMOCAP_mp3/Ses01F_script01_1_F024_fru.mp3	positive
 ['Ses04M', 'script02', '1', 'F018']	IEMOCAP_mp3/Ses04M_script02_1_F018_ang.mp3	positive
 ['Ses01F', 'impro05', 'M029']	IEMOCAP_mp3/Ses01F_impro05_M029_neu.mp3	negative
 ['Ses02M', 'impro01', 'M020']	IEMOCAP_mp3/Ses02M_impro01_M020_fru.mp3	positive
-['Ses02M', 'impro03', 'F024']	IEMOCAP_mp3/Ses02M_impro03_F024_exc.mp3	negative
 ['Ses05F', 'impro05', 'F037']	IEMOCAP_mp3/Ses05F_impro05_F037_fru.mp3	positive
 ['Ses05F', 'impro05', 'M026']	IEMOCAP_mp3/Ses05F_impro05_M026_fru.mp3	positive
-['Ses04F', 'impro08', 'M028']	IEMOCAP_mp3/Ses04F_impro08_M028_fru.mp3	positive
 ['Ses04F', 'impro05', 'M016']	IEMOCAP_mp3/Ses04F_impro05_M016_fru.mp3	positive
-['Ses01M', 'impro04', 'F024']	IEMOCAP_mp3/Ses01M_impro04_F024_fru.mp3	positive
 ['Ses01F', 'impro06', 'F015']	IEMOCAP_mp3/Ses01F_impro06_F015_sad.mp3	negative
 ['Ses04F', 'impro05', 'F009']	IEMOCAP_mp3/Ses04F_impro05_F009_ang.mp3	positive
 ['Ses04F', 'script03', '2', 'F035']	IEMOCAP_mp3/Ses04F_script03_2_F035_ang.mp3	positive
-['Ses05M', 'impro06', 'M014']	IEMOCAP_mp3/Ses05M_impro06_M014_sad.mp3	negative
-['Ses01M', 'script03', '1', 'M001']	IEMOCAP_mp3/Ses01M_script03_1_M001_fea.mp3	negative
 ['Ses03F', 'script01', '1', 'F044']	IEMOCAP_mp3/Ses03F_script01_1_F044_fru.mp3	positive
 ['Ses05M', 'impro06', 'M006']	IEMOCAP_mp3/Ses05M_impro06_M006_sad.mp3	negative
-['Ses01M', 'impro07', 'F003']	IEMOCAP_mp3/Ses01M_impro07_F003_exc.mp3	negative
 ['Ses04M', 'script03', '2', 'M047']	IEMOCAP_mp3/Ses04M_script03_2_M047_ang.mp3	positive
-['Ses02M', 'script01', '1', 'F041']	IEMOCAP_mp3/Ses02M_script01_1_F041_sad.mp3	negative
 ['Ses05M', 'impro04', 'M002']	IEMOCAP_mp3/Ses05M_impro04_M002_fru.mp3	positive
 ['Ses04M', 'impro02', 'M034']	IEMOCAP_mp3/Ses04M_impro02_M034_fru.mp3	positive
-['Ses04F', 'script01', '3', 'M018']	IEMOCAP_mp3/Ses04F_script01_3_M018_hap.mp3	negative
 ['Ses03M', 'script02', '2', 'F036']	IEMOCAP_mp3/Ses03M_script02_2_F036_sad.mp3	negative
 ['Ses03M', 'script02', '1', 'M042']	IEMOCAP_mp3/Ses03M_script02_1_M042_exc.mp3	negative
 ['Ses01M', 'impro01', 'M020']	IEMOCAP_mp3/Ses01M_impro01_M020_ang.mp3	positive
 ['Ses03F', 'impro06', 'M002']	IEMOCAP_mp3/Ses03F_impro06_M002_sad.mp3	negative
 ['Ses05M', 'script01', '1', 'F038']	IEMOCAP_mp3/Ses05M_script01_1_F038_fru.mp3	positive
 ['Ses04M', 'impro07', 'M011']	IEMOCAP_mp3/Ses04M_impro07_M011_hap.mp3	negative
-['Ses04F', 'impro08', 'F003']	IEMOCAP_mp3/Ses04F_impro08_F003_fru.mp3	positive
 ['Ses01M', 'script02', '1', 'F014']	IEMOCAP_mp3/Ses01M_script02_1_F014_ang.mp3	positive
 ['Ses03F', 'script02', '2', 'F016']	IEMOCAP_mp3/Ses03F_script02_2_F016_sad.mp3	negative
-['Ses03F', 'script02', '2', 'F040']	IEMOCAP_mp3/Ses03F_script02_2_F040_sad.mp3	negative
 ['Ses03F', 'impro06', 'F007']	IEMOCAP_mp3/Ses03F_impro06_F007_sad.mp3	negative
-['Ses01F', 'script03', '2', 'M038']	IEMOCAP_mp3/Ses01F_script03_2_M038_ang.mp3	positive
-['Ses04M', 'impro01', 'F012']	IEMOCAP_mp3/Ses04M_impro01_F012_neu.mp3	negative
-['Ses03F', 'impro05', 'F003']	IEMOCAP_mp3/Ses03F_impro05_F003_fru.mp3	positive
-['Ses01F', 'script01', '1', 'M008']	IEMOCAP_mp3/Ses01F_script01_1_M008_fru.mp3	positive
 ['Ses02F', 'impro08', 'M011']	IEMOCAP_mp3/Ses02F_impro08_M011_neu.mp3	negative
 ['Ses01F', 'impro01', 'F008']	IEMOCAP_mp3/Ses01F_impro01_F008_fru.mp3	positive
-['Ses02M', 'impro05', 'F008']	IEMOCAP_mp3/Ses02M_impro05_F008_neu.mp3	negative
 ['Ses04F', 'script01', '2', 'F002']	IEMOCAP_mp3/Ses04F_script01_2_F002_fru.mp3	positive
-['Ses04M', 'impro07', 'M015']	IEMOCAP_mp3/Ses04M_impro07_M015_exc.mp3	negative
 ['Ses02M', 'script03', '2', 'M046']	IEMOCAP_mp3/Ses02M_script03_2_M046_ang.mp3	positive
-['Ses02F', 'impro04', 'M016']	IEMOCAP_mp3/Ses02F_impro04_M016_neu.mp3	negative
 ['Ses02M', 'impro04', 'F004']	IEMOCAP_mp3/Ses02M_impro04_F004_neu.mp3	negative
-['Ses03M', 'script02', '2', 'F040']	IEMOCAP_mp3/Ses03M_script02_2_F040_sad.mp3	negative
-['Ses01F', 'impro02', 'F003']	IEMOCAP_mp3/Ses01F_impro02_F003_neu.mp3	negative
 ['Ses04F', 'impro04', 'M021']	IEMOCAP_mp3/Ses04F_impro04_M021_neu.mp3	negative
-['Ses04F', 'impro07', 'M061']	IEMOCAP_mp3/Ses04F_impro07_M061_neu.mp3	negative
-['Ses03M', 'impro06', 'M032']	IEMOCAP_mp3/Ses03M_impro06_M032_sad.mp3	negative
-['Ses04F', 'script01', '1', 'M027']	IEMOCAP_mp3/Ses04F_script01_1_M027_fru.mp3	positive
-['Ses01M', 'impro01', 'M000']	IEMOCAP_mp3/Ses01M_impro01_M000_fru.mp3	positive
 ['Ses04M', 'impro06', 'M018']	IEMOCAP_mp3/Ses04M_impro06_M018_sad.mp3	negative
 ['Ses05F', 'impro05', 'M004']	IEMOCAP_mp3/Ses05F_impro05_M004_neu.mp3	negative
 ['Ses02F', 'impro03', 'F016']	IEMOCAP_mp3/Ses02F_impro03_F016_hap.mp3	negative
 ['Ses04M', 'script02', '2', 'F023']	IEMOCAP_mp3/Ses04M_script02_2_F023_fru.mp3	positive
-['Ses03M', 'script02', '2', 'F003']	IEMOCAP_mp3/Ses03M_script02_2_F003_ang.mp3	positive
 ['Ses05F', 'impro01', 'F021']	IEMOCAP_mp3/Ses05F_impro01_F021_fru.mp3	positive
 ['Ses01M', 'script01', '3', 'F004']	IEMOCAP_mp3/Ses01M_script01_3_F004_neu.mp3	negative
-['Ses03F', 'impro03', 'F017']	IEMOCAP_mp3/Ses03F_impro03_F017_exc.mp3	negative
 ['Ses05F', 'impro05', 'F008']	IEMOCAP_mp3/Ses05F_impro05_F008_fru.mp3	positive
 ['Ses04M', 'impro05', 'M032']	IEMOCAP_mp3/Ses04M_impro05_M032_fru.mp3	positive
 ['Ses03M', 'impro02', 'F028']	IEMOCAP_mp3/Ses03M_impro02_F028_sad.mp3	negative
 ['Ses05F', 'script03', '2', 'M014']	IEMOCAP_mp3/Ses05F_script03_2_M014_ang.mp3	positive
-['Ses05M', 'impro05', 'M020']	IEMOCAP_mp3/Ses05M_impro05_M020_fru.mp3	positive
-['Ses05F', 'script03', '2', 'M016']	IEMOCAP_mp3/Ses05F_script03_2_M016_ang.mp3	positive
 ['Ses05M', 'impro03', 'M019']	IEMOCAP_mp3/Ses05M_impro03_M019_neu.mp3	negative
 ['Ses01F', 'script03', '2', 'M010']	IEMOCAP_mp3/Ses01F_script03_2_M010_neu.mp3	negative
 ['Ses02M', 'impro07', 'F026']	IEMOCAP_mp3/Ses02M_impro07_F026_exc.mp3	negative
 ['Ses01M', 'script01', '2', 'M000']	IEMOCAP_mp3/Ses01M_script01_2_M000_neu.mp3	negative
-['Ses03M', 'impro06', 'F012']	IEMOCAP_mp3/Ses03M_impro06_F012_sad.mp3	negative
-['Ses02F', 'impro01', 'M015']	IEMOCAP_mp3/Ses02F_impro01_M015_fru.mp3	positive
 ['Ses02M', 'script02', '1', 'M034']	IEMOCAP_mp3/Ses02M_script02_1_M034_fru.mp3	positive
 ['Ses05M', 'script01', '2', 'F014']	IEMOCAP_mp3/Ses05M_script01_2_F014_fru.mp3	positive
-['Ses05F', 'impro04', 'F006']	IEMOCAP_mp3/Ses05F_impro04_F006_fru.mp3	positive
 ['Ses04F', 'impro03', 'F014']	IEMOCAP_mp3/Ses04F_impro03_F014_exc.mp3	negative
 ['Ses05F', 'impro03', 'M008']	IEMOCAP_mp3/Ses05F_impro03_M008_exc.mp3	negative
-['Ses02M', 'impro08', 'F004']	IEMOCAP_mp3/Ses02M_impro08_F004_fru.mp3	positive
-['Ses02M', 'impro03', 'M001']	IEMOCAP_mp3/Ses02M_impro03_M001_exc.mp3	negative
-['Ses03F', 'impro02', 'F026']	IEMOCAP_mp3/Ses03F_impro02_F026_sad.mp3	negative
-['Ses03M', 'impro07', 'M013']	IEMOCAP_mp3/Ses03M_impro07_M013_exc.mp3	negative
 ['Ses03F', 'script01', '1', 'F034']	IEMOCAP_mp3/Ses03F_script01_1_F034_fru.mp3	positive
 ['Ses02M', 'script01', '3', 'F008']	IEMOCAP_mp3/Ses02M_script01_3_F008_neu.mp3	negative
-['Ses05M', 'impro08', 'F014']	IEMOCAP_mp3/Ses05M_impro08_F014_neu.mp3	negative
-['Ses05M', 'script01', '3', 'M033']	IEMOCAP_mp3/Ses05M_script01_3_M033_sad.mp3	negative
 ['Ses02M', 'script01', '1', 'F032']	IEMOCAP_mp3/Ses02M_script01_1_F032_ang.mp3	positive
-['Ses02M', 'script01', '2', 'M017']	IEMOCAP_mp3/Ses02M_script01_2_M017_ang.mp3	positive
-['Ses05F', 'impro01', 'M019']	IEMOCAP_mp3/Ses05F_impro01_M019_fru.mp3	positive
 ['Ses05M', 'impro01', 'F017']	IEMOCAP_mp3/Ses05M_impro01_F017_fru.mp3	positive
 ['Ses03M', 'script02', '2', 'M031']	IEMOCAP_mp3/Ses03M_script02_2_M031_ang.mp3	positive
-['Ses03F', 'impro04', 'F010']	IEMOCAP_mp3/Ses03F_impro04_F010_fru.mp3	positive
-['Ses05M', 'script03', '2', 'M020']	IEMOCAP_mp3/Ses05M_script03_2_M020_ang.mp3	positive
-['Ses02M', 'impro08', 'M015']	IEMOCAP_mp3/Ses02M_impro08_M015_neu.mp3	negative
-['Ses01M', 'script02', '1', 'M022']	IEMOCAP_mp3/Ses01M_script02_1_M022_neu.mp3	negative
-['Ses03F', 'impro03', 'F012']	IEMOCAP_mp3/Ses03F_impro03_F012_exc.mp3	negative
 ['Ses02F', 'impro01', 'M006']	IEMOCAP_mp3/Ses02F_impro01_M006_fru.mp3	positive
 ['Ses02M', 'script01', '1', 'M013']	IEMOCAP_mp3/Ses02M_script01_1_M013_ang.mp3	positive
-['Ses02F', 'impro01', 'M001']	IEMOCAP_mp3/Ses02F_impro01_M001_neu.mp3	negative
-['Ses03F', 'impro04', 'F000']	IEMOCAP_mp3/Ses03F_impro04_F000_fru.mp3	positive
 ['Ses03F', 'impro06', 'F012']	IEMOCAP_mp3/Ses03F_impro06_F012_sad.mp3	negative
-['Ses05F', 'script02', '1', 'M030']	IEMOCAP_mp3/Ses05F_script02_1_M030_exc.mp3	negative
-['Ses03F', 'impro02', 'F042']	IEMOCAP_mp3/Ses03F_impro02_F042_sad.mp3	negative
-['Ses03M', 'impro01', 'M022']	IEMOCAP_mp3/Ses03M_impro01_M022_fru.mp3	positive
 ['Ses03M', 'impro05a', 'M011']	IEMOCAP_mp3/Ses03M_impro05a_M011_ang.mp3	positive
 ['Ses04M', 'script01', '1', 'F034']	IEMOCAP_mp3/Ses04M_script01_1_F034_ang.mp3	positive
-['Ses03M', 'script01', '3', 'F033']	IEMOCAP_mp3/Ses03M_script01_3_F033_sad.mp3	negative
-['Ses04M', 'impro02', 'M000']	IEMOCAP_mp3/Ses04M_impro02_M000_sad.mp3	negative
 ['Ses05F', 'impro08', 'M004']	IEMOCAP_mp3/Ses05F_impro08_M004_ang.mp3	positive
 ['Ses02F', 'impro07', 'F019']	IEMOCAP_mp3/Ses02F_impro07_F019_exc.mp3	negative
 ['Ses02F', 'script02', '1', 'F013']	IEMOCAP_mp3/Ses02F_script02_1_F013_fru.mp3	positive
 ['Ses01F', 'impro05', 'M004']	IEMOCAP_mp3/Ses01F_impro05_M004_neu.mp3	negative
-['Ses05F', 'impro04', 'M034']	IEMOCAP_mp3/Ses05F_impro04_M034_neu.mp3	negative
-['Ses05F', 'script03', '2', 'M042']	IEMOCAP_mp3/Ses05F_script03_2_M042_ang.mp3	positive
-['Ses04F', 'impro01', 'F007']	IEMOCAP_mp3/Ses04F_impro01_F007_fru.mp3	positive
-['Ses02F', 'script03', '2', 'F028']	IEMOCAP_mp3/Ses02F_script03_2_F028_fru.mp3	positive
-['Ses05M', 'impro08', 'F022']	IEMOCAP_mp3/Ses05M_impro08_F022_hap.mp3	negative
-['Ses03M', 'script03', '2', 'M004']	IEMOCAP_mp3/Ses03M_script03_2_M004_ang.mp3	positive
-['Ses02F', 'script02', '2', 'F013']	IEMOCAP_mp3/Ses02F_script02_2_F013_fru.mp3	positive
 ['Ses05M', 'impro04', 'M006']	IEMOCAP_mp3/Ses05M_impro04_M006_fru.mp3	positive
 ['Ses02F', 'impro06', 'M006']	IEMOCAP_mp3/Ses02F_impro06_M006_neu.mp3	negative
-['Ses01M', 'script01', '1', 'F005']	IEMOCAP_mp3/Ses01M_script01_1_F005_sad.mp3	negative
-['Ses03F', 'impro06', 'M016']	IEMOCAP_mp3/Ses03F_impro06_M016_sad.mp3	negative
-['Ses01M', 'script02', '2', 'M018']	IEMOCAP_mp3/Ses01M_script02_2_M018_fru.mp3	positive
 ['Ses01M', 'script02', '1', 'M028']	IEMOCAP_mp3/Ses01M_script02_1_M028_ang.mp3	positive
-['Ses03M', 'impro06', 'M026']	IEMOCAP_mp3/Ses03M_impro06_M026_sad.mp3	negative
-['Ses03M', 'impro08a', 'F033']	IEMOCAP_mp3/Ses03M_impro08a_F033_fru.mp3	positive
 ['Ses01F', 'script01', '3', 'F028']	IEMOCAP_mp3/Ses01F_script01_3_F028_neu.mp3	negative
-['Ses05F', 'impro03', 'F028']	IEMOCAP_mp3/Ses05F_impro03_F028_hap.mp3	negative
 ['Ses02F', 'impro04', 'F003']	IEMOCAP_mp3/Ses02F_impro04_F003_fru.mp3	positive
-['Ses04M', 'script03', '2', 'F000']	IEMOCAP_mp3/Ses04M_script03_2_F000_ang.mp3	positive
-['Ses04F', 'script03', '2', 'M041']	IEMOCAP_mp3/Ses04F_script03_2_M041_ang.mp3	positive
-['Ses05F', 'script01', '1', 'F023']	IEMOCAP_mp3/Ses05F_script01_1_F023_fru.mp3	positive
-['Ses01M', 'impro07', 'M021']	IEMOCAP_mp3/Ses01M_impro07_M021_sur.mp3	negative
-['Ses05F', 'script02', '1', 'M009']	IEMOCAP_mp3/Ses05F_script02_1_M009_exc.mp3	negative
 ['Ses05M', 'impro07', 'F029']	IEMOCAP_mp3/Ses05M_impro07_F029_neu.mp3	negative
 ['Ses04F', 'impro01', 'F002']	IEMOCAP_mp3/Ses04F_impro01_F002_fru.mp3	positive
-['Ses04F', 'impro02', 'M000']	IEMOCAP_mp3/Ses04F_impro02_M000_sad.mp3	negative
-['Ses05M', 'impro05', 'F016']	IEMOCAP_mp3/Ses05M_impro05_F016_neu.mp3	negative
-['Ses05F', 'impro05', 'F039']	IEMOCAP_mp3/Ses05F_impro05_F039_fru.mp3	positive
 ['Ses01M', 'script01', '1', 'F022']	IEMOCAP_mp3/Ses01M_script01_1_F022_fru.mp3	positive
 ['Ses05F', 'impro03', 'F057']	IEMOCAP_mp3/Ses05F_impro03_F057_hap.mp3	negative
-['Ses01M', 'script01', '1', 'F003']	IEMOCAP_mp3/Ses01M_script01_1_F003_sur.mp3	negative
 ['Ses03M', 'impro05b', 'F004']	IEMOCAP_mp3/Ses03M_impro05b_F004_neu.mp3	negative
-['Ses05M', 'impro02', 'F023']	IEMOCAP_mp3/Ses05M_impro02_F023_sad.mp3	negative
 ['Ses03M', 'script02', '1', 'F009']	IEMOCAP_mp3/Ses03M_script02_1_F009_fru.mp3	positive
-['Ses05F', 'impro06', 'F016']	IEMOCAP_mp3/Ses05F_impro06_F016_sad.mp3	negative
 ['Ses01M', 'impro01', 'M002']	IEMOCAP_mp3/Ses01M_impro01_M002_fru.mp3	positive
-['Ses05F', 'script02', '1', 'F004']	IEMOCAP_mp3/Ses05F_script02_1_F004_fru.mp3	positive
-['Ses01F', 'impro02', 'F002']	IEMOCAP_mp3/Ses01F_impro02_F002_sad.mp3	negative
-['Ses05F', 'script01', '1', 'F030']	IEMOCAP_mp3/Ses05F_script01_1_F030_fru.mp3	positive
 ['Ses05F', 'impro05', 'M012']	IEMOCAP_mp3/Ses05F_impro05_M012_neu.mp3	negative
 ['Ses05M', 'script03', '2', 'M024']	IEMOCAP_mp3/Ses05M_script03_2_M024_neu.mp3	negative
-['Ses02M', 'script01', '1', 'F033']	IEMOCAP_mp3/Ses02M_script01_1_F033_ang.mp3	positive
 ['Ses04M', 'impro04', 'F006']	IEMOCAP_mp3/Ses04M_impro04_F006_neu.mp3	negative
 ['Ses04M', 'script01', '3', 'M031']	IEMOCAP_mp3/Ses04M_script01_3_M031_sad.mp3	negative
-['Ses02M', 'script03', '2', 'M003']	IEMOCAP_mp3/Ses02M_script03_2_M003_ang.mp3	positive
-['Ses02M', 'impro03', 'F018']	IEMOCAP_mp3/Ses02M_impro03_F018_exc.mp3	negative
 ['Ses04M', 'script01', '1', 'M021']	IEMOCAP_mp3/Ses04M_script01_1_M021_ang.mp3	positive
-['Ses02M', 'impro07', 'F001']	IEMOCAP_mp3/Ses02M_impro07_F001_exc.mp3	negative
 ['Ses04F', 'script01', '1', 'F009']	IEMOCAP_mp3/Ses04F_script01_1_F009_sur.mp3	negative
-['Ses01F', 'impro01', 'F011']	IEMOCAP_mp3/Ses01F_impro01_F011_fru.mp3	positive
-['Ses03M', 'impro01', 'F003']	IEMOCAP_mp3/Ses03M_impro01_F003_neu.mp3	negative
 ['Ses04M', 'script02', '2', 'F000']	IEMOCAP_mp3/Ses04M_script02_2_F000_neu.mp3	negative
-['Ses04F', 'script03', '1', 'F024']	IEMOCAP_mp3/Ses04F_script03_1_F024_exc.mp3	negative
 ['Ses04F', 'impro04', 'F000']	IEMOCAP_mp3/Ses04F_impro04_F000_neu.mp3	negative
-['Ses01F', 'script01', '1', 'M039']	IEMOCAP_mp3/Ses01F_script01_1_M039_neu.mp3	negative
 ['Ses03M', 'impro01', 'F006']	IEMOCAP_mp3/Ses03M_impro01_F006_fru.mp3	positive
 ['Ses05M', 'impro04', 'M032']	IEMOCAP_mp3/Ses05M_impro04_M032_fru.mp3	positive
-['Ses04F', 'impro06', 'M011']	IEMOCAP_mp3/Ses04F_impro06_M011_sad.mp3	negative
 ['Ses01F', 'script02', '1', 'M044']	IEMOCAP_mp3/Ses01F_script02_1_M044_hap.mp3	negative
-['Ses02F', 'impro04', 'F011']	IEMOCAP_mp3/Ses02F_impro04_F011_fru.mp3	positive
-['Ses01M', 'impro06', 'F020']	IEMOCAP_mp3/Ses01M_impro06_F020_neu.mp3	negative
 ['Ses03M', 'script02', '1', 'F016']	IEMOCAP_mp3/Ses03M_script02_1_F016_neu.mp3	negative
-['Ses03F', 'impro01', 'M006']	IEMOCAP_mp3/Ses03F_impro01_M006_fru.mp3	positive
 ['Ses04M', 'impro05', 'M036']	IEMOCAP_mp3/Ses04M_impro05_M036_fru.mp3	positive
 ['Ses04M', 'script01', '2', 'F008']	IEMOCAP_mp3/Ses04M_script01_2_F008_ang.mp3	positive
-['Ses03F', 'script02', '1', 'M003']	IEMOCAP_mp3/Ses03F_script02_1_M003_exc.mp3	negative
-['Ses03F', 'impro02', 'M001']	IEMOCAP_mp3/Ses03F_impro02_M001_hap.mp3	negative
-['Ses01F', 'script01', '3', 'M025']	IEMOCAP_mp3/Ses01F_script01_3_M025_sad.mp3	negative
-['Ses05F', 'script03', '2', 'F000']	IEMOCAP_mp3/Ses05F_script03_2_F000_neu.mp3	negative
 ['Ses03M', 'impro01', 'F024']	IEMOCAP_mp3/Ses03M_impro01_F024_fru.mp3	positive
-['Ses05M', 'script01', '2', 'M005']	IEMOCAP_mp3/Ses05M_script01_2_M005_fru.mp3	positive
-['Ses03M', 'script02', '2', 'F012']	IEMOCAP_mp3/Ses03M_script02_2_F012_fru.mp3	positive
-['Ses04M', 'impro05', 'F007']	IEMOCAP_mp3/Ses04M_impro05_F007_neu.mp3	negative
 ['Ses03M', 'impro06', 'M031']	IEMOCAP_mp3/Ses03M_impro06_M031_sad.mp3	negative
 ['Ses02F', 'script01', '1', 'F031']	IEMOCAP_mp3/Ses02F_script01_1_F031_fru.mp3	positive
-['Ses02M', 'script01', '2', 'F002']	IEMOCAP_mp3/Ses02M_script01_2_F002_ang.mp3	positive
 ['Ses02M', 'impro03', 'F015']	IEMOCAP_mp3/Ses02M_impro03_F015_exc.mp3	negative
 ['Ses02F', 'impro04', 'F014']	IEMOCAP_mp3/Ses02F_impro04_F014_fru.mp3	positive
 ['Ses05F', 'script03', '1', 'M027']	IEMOCAP_mp3/Ses05F_script03_1_M027_exc.mp3	negative
-['Ses04F', 'script02', '2', 'M023']	IEMOCAP_mp3/Ses04F_script02_2_M023_neu.mp3	negative
-['Ses05F', 'script02', '2', 'M016']	IEMOCAP_mp3/Ses05F_script02_2_M016_neu.mp3	negative
-['Ses03M', 'impro08b', 'F023']	IEMOCAP_mp3/Ses03M_impro08b_F023_neu.mp3	negative
 ['Ses02M', 'script01', '1', 'M019']	IEMOCAP_mp3/Ses02M_script01_1_M019_fru.mp3	positive
 ['Ses01M', 'impro07', 'F008']	IEMOCAP_mp3/Ses01M_impro07_F008_exc.mp3	negative
 ['Ses04F', 'script03', '1', 'F007']	IEMOCAP_mp3/Ses04F_script03_1_F007_exc.mp3	negative
-['Ses05F', 'script01', '3', 'M010']	IEMOCAP_mp3/Ses05F_script01_3_M010_exc.mp3	negative
 ['Ses02M', 'impro02', 'M000']	IEMOCAP_mp3/Ses02M_impro02_M000_sad.mp3	negative
 ['Ses04M', 'impro05', 'M003']	IEMOCAP_mp3/Ses04M_impro05_M003_fru.mp3	positive
 ['Ses03M', 'impro06', 'M002']	IEMOCAP_mp3/Ses03M_impro06_M002_sad.mp3	negative
 ['Ses01F', 'script02', '2', 'M020']	IEMOCAP_mp3/Ses01F_script02_2_M020_fru.mp3	positive
-['Ses05F', 'script01', '1', 'F035']	IEMOCAP_mp3/Ses05F_script01_1_F035_fru.mp3	positive
 ['Ses05M', 'impro05', 'F011']	IEMOCAP_mp3/Ses05M_impro05_F011_neu.mp3	negative
 ['Ses04M', 'impro06', 'M017']	IEMOCAP_mp3/Ses04M_impro06_M017_sad.mp3	negative
-['Ses01M', 'impro03', 'M004']	IEMOCAP_mp3/Ses01M_impro03_M004_exc.mp3	negative
-['Ses04F', 'impro04', 'M027']	IEMOCAP_mp3/Ses04F_impro04_M027_fru.mp3	positive
 ['Ses02M', 'impro04', 'M022']	IEMOCAP_mp3/Ses02M_impro04_M022_sad.mp3	negative
 ['Ses03M', 'script02', '1', 'F018']	IEMOCAP_mp3/Ses03M_script02_1_F018_fru.mp3	positive
-['Ses02M', 'script01', '1', 'M025']	IEMOCAP_mp3/Ses02M_script01_1_M025_ang.mp3	positive
 ['Ses02F', 'script03', '1', 'M005']	IEMOCAP_mp3/Ses02F_script03_1_M005_neu.mp3	negative
 ['Ses04F', 'impro04', 'F003']	IEMOCAP_mp3/Ses04F_impro04_F003_fru.mp3	positive
 ['Ses01F', 'script03', '2', 'M014']	IEMOCAP_mp3/Ses01F_script03_2_M014_ang.mp3	positive
-['Ses02F', 'impro03', 'M016']	IEMOCAP_mp3/Ses02F_impro03_M016_neu.mp3	negative
 ['Ses03M', 'impro07', 'M022']	IEMOCAP_mp3/Ses03M_impro07_M022_exc.mp3	negative
 ['Ses05F', 'script03', '1', 'M001']	IEMOCAP_mp3/Ses05F_script03_1_M001_exc.mp3	negative
-['Ses05F', 'impro04', 'M037']	IEMOCAP_mp3/Ses05F_impro04_M037_neu.mp3	negative
-['Ses02F', 'impro01', 'M022']	IEMOCAP_mp3/Ses02F_impro01_M022_fru.mp3	positive
-['Ses01F', 'script03', '1', 'M002']	IEMOCAP_mp3/Ses01F_script03_1_M002_fea.mp3	negative
-['Ses04M', 'script02', '2', 'F029']	IEMOCAP_mp3/Ses04M_script02_2_F029_ang.mp3	positive
-['Ses03M', 'impro05a', 'M029']	IEMOCAP_mp3/Ses03M_impro05a_M029_ang.mp3	positive
 ['Ses01M', 'script02', '2', 'F038']	IEMOCAP_mp3/Ses01M_script02_2_F038_sur.mp3	negative
 ['Ses05M', 'script03', '2', 'M038']	IEMOCAP_mp3/Ses05M_script03_2_M038_ang.mp3	positive
 ['Ses04M', 'impro05', 'F031']	IEMOCAP_mp3/Ses04M_impro05_F031_fru.mp3	positive
-['Ses05F', 'impro04', 'M004']	IEMOCAP_mp3/Ses05F_impro04_M004_neu.mp3	negative
-['Ses01F', 'script01', '1', 'M032']	IEMOCAP_mp3/Ses01F_script01_1_M032_fru.mp3	positive
 ['Ses05F', 'impro04', 'F016']	IEMOCAP_mp3/Ses05F_impro04_F016_sad.mp3	negative
-['Ses05M', 'impro06', 'M011']	IEMOCAP_mp3/Ses05M_impro06_M011_sad.mp3	negative
-['Ses02F', 'impro08', 'M005']	IEMOCAP_mp3/Ses02F_impro08_M005_neu.mp3	negative
-['Ses05F', 'script02', '2', 'F019']	IEMOCAP_mp3/Ses05F_script02_2_F019_sad.mp3	negative
 ['Ses01F', 'impro06', 'M001']	IEMOCAP_mp3/Ses01F_impro06_M001_neu.mp3	negative
 ['Ses02F', 'script02', '1', 'M020']	IEMOCAP_mp3/Ses02F_script02_1_M020_neu.mp3	negative
 ['Ses05F', 'impro07', 'M012']	IEMOCAP_mp3/Ses05F_impro07_M012_exc.mp3	negative
 ['Ses03M', 'script01', '2', 'M012']	IEMOCAP_mp3/Ses03M_script01_2_M012_fru.mp3	positive
 ['Ses04F', 'impro02', 'F016']	IEMOCAP_mp3/Ses04F_impro02_F016_fru.mp3	positive
 ['Ses02F', 'script01', '3', 'M029']	IEMOCAP_mp3/Ses02F_script01_3_M029_sad.mp3	negative
-['Ses01M', 'script03', '1', 'F002']	IEMOCAP_mp3/Ses01M_script03_1_F002_fea.mp3	negative
 ['Ses04M', 'impro05', 'M045']	IEMOCAP_mp3/Ses04M_impro05_M045_ang.mp3	positive
-['Ses03M', 'impro02', 'M033']	IEMOCAP_mp3/Ses03M_impro02_M033_sur.mp3	negative
 ['Ses03M', 'script01', '1', 'M002']	IEMOCAP_mp3/Ses03M_script01_1_M002_sad.mp3	negative
 ['Ses04F', 'script01', '2', 'F016']	IEMOCAP_mp3/Ses04F_script01_2_F016_ang.mp3	positive
 ['Ses05F', 'impro07', 'M031']	IEMOCAP_mp3/Ses05F_impro07_M031_exc.mp3	negative
 ['Ses05F', 'impro06', 'F024']	IEMOCAP_mp3/Ses05F_impro06_F024_sad.mp3	negative
-['Ses04F', 'impro01', 'M002']	IEMOCAP_mp3/Ses04F_impro01_M002_fru.mp3	positive
-['Ses04F', 'script01', '2', 'M004']	IEMOCAP_mp3/Ses04F_script01_2_M004_neu.mp3	negative
-['Ses02M', 'impro07', 'M031']	IEMOCAP_mp3/Ses02M_impro07_M031_exc.mp3	negative
-['Ses01M', 'script03', '1', 'M017']	IEMOCAP_mp3/Ses01M_script03_1_M017_hap.mp3	negative
 ['Ses05F', 'impro07', 'M024']	IEMOCAP_mp3/Ses05F_impro07_M024_exc.mp3	negative
-['Ses03M', 'impro01', 'M021']	IEMOCAP_mp3/Ses03M_impro01_M021_fru.mp3	positive
 ['Ses01M', 'impro05', 'F013']	IEMOCAP_mp3/Ses01M_impro05_F013_neu.mp3	negative
-['Ses01M', 'impro05', 'F034']	IEMOCAP_mp3/Ses01M_impro05_F034_neu.mp3	negative
-['Ses03M', 'script02', '2', 'M008']	IEMOCAP_mp3/Ses03M_script02_2_M008_fru.mp3	positive
 ['Ses01M', 'script01', '3', 'M043']	IEMOCAP_mp3/Ses01M_script01_3_M043_hap.mp3	negative
-['Ses05M', 'impro08', 'M003']	IEMOCAP_mp3/Ses05M_impro08_M003_neu.mp3	negative
 ['Ses01M', 'script02', '1', 'M000']	IEMOCAP_mp3/Ses01M_script02_1_M000_exc.mp3	negative
-['Ses03M', 'script01', '3', 'M018']	IEMOCAP_mp3/Ses03M_script01_3_M018_hap.mp3	negative
 ['Ses04M', 'script03', '2', 'M011']	IEMOCAP_mp3/Ses04M_script03_2_M011_ang.mp3	positive
-['Ses02M', 'script03', '1', 'M012']	IEMOCAP_mp3/Ses02M_script03_1_M012_exc.mp3	negative
-['Ses02M', 'impro03', 'F001']	IEMOCAP_mp3/Ses02M_impro03_F001_exc.mp3	negative
-['Ses02M', 'impro04', 'M019']	IEMOCAP_mp3/Ses02M_impro04_M019_ang.mp3	positive
-['Ses03M', 'impro08a', 'M008']	IEMOCAP_mp3/Ses03M_impro08a_M008_neu.mp3	negative
 ['Ses01M', 'impro07', 'M011']	IEMOCAP_mp3/Ses01M_impro07_M011_hap.mp3	negative
-['Ses03M', 'impro05a', 'F014']	IEMOCAP_mp3/Ses03M_impro05a_F014_neu.mp3	negative
 ['Ses05M', 'script01', '1', 'M037']	IEMOCAP_mp3/Ses05M_script01_1_M037_ang.mp3	positive
-['Ses05F', 'script02', '2', 'F034']	IEMOCAP_mp3/Ses05F_script02_2_F034_hap.mp3	negative
 ['Ses04F', 'script02', '1', 'M025']	IEMOCAP_mp3/Ses04F_script02_1_M025_fru.mp3	positive
-['Ses03F', 'script03', '1', 'F014']	IEMOCAP_mp3/Ses03F_script03_1_F014_sad.mp3	negative
 ['Ses05M', 'impro07', 'F042']	IEMOCAP_mp3/Ses05M_impro07_F042_exc.mp3	negative
-['Ses01F', 'impro03', 'F026']	IEMOCAP_mp3/Ses01F_impro03_F026_hap.mp3	negative
 ['Ses01F', 'script03', '2', 'M016']	IEMOCAP_mp3/Ses01F_script03_2_M016_neu.mp3	negative
-['Ses04F', 'script02', '2', 'F009']	IEMOCAP_mp3/Ses04F_script02_2_F009_ang.mp3	positive
-['Ses01F', 'impro04', 'F019']	IEMOCAP_mp3/Ses01F_impro04_F019_fru.mp3	positive
-['Ses05F', 'impro08', 'M011']	IEMOCAP_mp3/Ses05F_impro08_M011_fru.mp3	positive
-['Ses02M', 'script01', '2', 'M008']	IEMOCAP_mp3/Ses02M_script01_2_M008_fru.mp3	positive
-['Ses02F', 'script03', '1', 'F015']	IEMOCAP_mp3/Ses02F_script03_1_F015_neu.mp3	negative
-['Ses01F', 'script03', '1', 'F020']	IEMOCAP_mp3/Ses01F_script03_1_F020_hap.mp3	negative
-['Ses01F', 'script01', '3', 'F013']	IEMOCAP_mp3/Ses01F_script01_3_F013_hap.mp3	negative
-['Ses03M', 'impro05b', 'M032']	IEMOCAP_mp3/Ses03M_impro05b_M032_ang.mp3	positive
 ['Ses01F', 'impro04', 'F002']	IEMOCAP_mp3/Ses01F_impro04_F002_fru.mp3	positive
-['Ses04F', 'script01', '1', 'M023']	IEMOCAP_mp3/Ses04F_script01_1_M023_fru.mp3	positive
-['Ses01F', 'script01', '3', 'F011']	IEMOCAP_mp3/Ses01F_script01_3_F011_hap.mp3	negative
 ['Ses02M', 'script02', '1', 'M036']	IEMOCAP_mp3/Ses02M_script02_1_M036_exc.mp3	negative
 ['Ses04M', 'impro08', 'M016']	IEMOCAP_mp3/Ses04M_impro08_M016_fru.mp3	positive
 ['Ses04M', 'impro01', 'M014']	IEMOCAP_mp3/Ses04M_impro01_M014_fru.mp3	positive
-['Ses01F', 'script03', '2', 'M007']	IEMOCAP_mp3/Ses01F_script03_2_M007_ang.mp3	positive
-['Ses02M', 'impro08', 'M029']	IEMOCAP_mp3/Ses02M_impro08_M029_neu.mp3	negative
-['Ses01F', 'script01', '1', 'M023']	IEMOCAP_mp3/Ses01F_script01_1_M023_neu.mp3	negative
-['Ses02F', 'script01', '1', 'M019']	IEMOCAP_mp3/Ses02F_script01_1_M019_fru.mp3	positive
-['Ses01M', 'script01', '3', 'M009']	IEMOCAP_mp3/Ses01M_script01_3_M009_hap.mp3	negative
-['Ses02M', 'script01', '1', 'M003']	IEMOCAP_mp3/Ses02M_script01_1_M003_sad.mp3	negative
-['Ses05F', 'impro03', 'F056']	IEMOCAP_mp3/Ses05F_impro03_F056_hap.mp3	negative
 ['Ses03F', 'script03', '2', 'F041']	IEMOCAP_mp3/Ses03F_script03_2_F041_ang.mp3	positive
-['Ses05F', 'script02', '2', 'M020']	IEMOCAP_mp3/Ses05F_script02_2_M020_exc.mp3	negative
 ['Ses03F', 'impro01', 'F009']	IEMOCAP_mp3/Ses03F_impro01_F009_fru.mp3	positive
-['Ses03M', 'script01', '3', 'M030']	IEMOCAP_mp3/Ses03M_script01_3_M030_sad.mp3	negative
-['Ses01M', 'impro06', 'M004']	IEMOCAP_mp3/Ses01M_impro06_M004_sad.mp3	negative
 ['Ses01M', 'impro01', 'M003']	IEMOCAP_mp3/Ses01M_impro01_M003_neu.mp3	negative
 ['Ses02F', 'impro01', 'F001']	IEMOCAP_mp3/Ses02F_impro01_F001_sur.mp3	negative
 ['Ses01F', 'script02', '1', 'M031']	IEMOCAP_mp3/Ses01F_script02_1_M031_neu.mp3	negative
-['Ses02M', 'impro04', 'M016']	IEMOCAP_mp3/Ses02M_impro04_M016_fru.mp3	positive
 ['Ses01M', 'script01', '3', 'M002']	IEMOCAP_mp3/Ses01M_script01_3_M002_sad.mp3	negative
 ['Ses05M', 'script01', '3', 'M027']	IEMOCAP_mp3/Ses05M_script01_3_M027_sad.mp3	negative
 ['Ses05F', 'impro05', 'F002']	IEMOCAP_mp3/Ses05F_impro05_F002_neu.mp3	negative
 ['Ses03F', 'script03', '2', 'M014']	IEMOCAP_mp3/Ses03F_script03_2_M014_ang.mp3	positive
 ['Ses02F', 'script01', '2', 'F004']	IEMOCAP_mp3/Ses02F_script01_2_F004_oth.mp3	negative
 ['Ses02F', 'impro03', 'M001']	IEMOCAP_mp3/Ses02F_impro03_M001_neu.mp3	negative
-['Ses04F', 'script01', '3', 'M028']	IEMOCAP_mp3/Ses04F_script01_3_M028_sad.mp3	negative
-['Ses05M', 'script02', '2', 'M013']	IEMOCAP_mp3/Ses05M_script02_2_M013_fru.mp3	positive
 ['Ses02F', 'script01', '3', 'F026']	IEMOCAP_mp3/Ses02F_script01_3_F026_sad.mp3	negative
-['Ses02M', 'impro08', 'M024']	IEMOCAP_mp3/Ses02M_impro08_M024_neu.mp3	negative
 ['Ses05F', 'impro05', 'M018']	IEMOCAP_mp3/Ses05F_impro05_M018_neu.mp3	negative
-['Ses02M', 'impro07', 'F024']	IEMOCAP_mp3/Ses02M_impro07_F024_hap.mp3	negative
 ['Ses05M', 'script03', '2', 'M011']	IEMOCAP_mp3/Ses05M_script03_2_M011_neu.mp3	negative
-['Ses04F', 'impro08', 'F023']	IEMOCAP_mp3/Ses04F_impro08_F023_ang.mp3	positive
-['Ses01M', 'script02', '1', 'M042']	IEMOCAP_mp3/Ses01M_script02_1_M042_exc.mp3	negative
 ['Ses05F', 'script03', '2', 'F014']	IEMOCAP_mp3/Ses05F_script03_2_F014_neu.mp3	negative
 ['Ses03F', 'impro06', 'M001']	IEMOCAP_mp3/Ses03F_impro06_M001_neu.mp3	negative
-['Ses05M', 'impro04', 'F003']	IEMOCAP_mp3/Ses05M_impro04_F003_neu.mp3	negative
 ['Ses02M', 'impro08', 'M031']	IEMOCAP_mp3/Ses02M_impro08_M031_neu.mp3	negative
-['Ses02F', 'script03', '1', 'M018']	IEMOCAP_mp3/Ses02F_script03_1_M018_neu.mp3	negative
 ['Ses02M', 'script01', '3', 'M004']	IEMOCAP_mp3/Ses02M_script01_3_M004_sur.mp3	negative
 ['Ses05F', 'impro03', 'M060']	IEMOCAP_mp3/Ses05F_impro03_M060_hap.mp3	negative
-['Ses01M', 'impro04', 'F017']	IEMOCAP_mp3/Ses01M_impro04_F017_neu.mp3	negative
 ['Ses05M', 'impro08', 'F015']	IEMOCAP_mp3/Ses05M_impro08_F015_neu.mp3	negative
-['Ses01F', 'impro01', 'M004']	IEMOCAP_mp3/Ses01F_impro01_M004_fru.mp3	positive
 ['Ses03M', 'script01', '1', 'F044']	IEMOCAP_mp3/Ses03M_script01_1_F044_fru.mp3	positive
 ['Ses04F', 'impro04', 'M025']	IEMOCAP_mp3/Ses04F_impro04_M025_fru.mp3	positive
-['Ses02F', 'script03', '2', 'M001']	IEMOCAP_mp3/Ses02F_script03_2_M001_neu.mp3	negative
-['Ses03F', 'script03', '2', 'F004']	IEMOCAP_mp3/Ses03F_script03_2_F004_neu.mp3	negative
 ['Ses04M', 'impro03', 'M023']	IEMOCAP_mp3/Ses04M_impro03_M023_exc.mp3	negative
-['Ses05F', 'impro01', 'F010']	IEMOCAP_mp3/Ses05F_impro01_F010_fru.mp3	positive
-['Ses02M', 'impro03', 'M031']	IEMOCAP_mp3/Ses02M_impro03_M031_hap.mp3	negative
 ['Ses02M', 'impro06', 'F015']	IEMOCAP_mp3/Ses02M_impro06_F015_sad.mp3	negative
-['Ses05F', 'script02', '1', 'M011']	IEMOCAP_mp3/Ses05F_script02_1_M011_exc.mp3	negative
 ['Ses01F', 'impro02', 'M016']	IEMOCAP_mp3/Ses01F_impro02_M016_fru.mp3	positive
-['Ses04M', 'script03', '1', 'M004']	IEMOCAP_mp3/Ses04M_script03_1_M004_exc.mp3	negative
 ['Ses05M', 'script02', '2', 'M023']	IEMOCAP_mp3/Ses05M_script02_2_M023_fru.mp3	positive
 ['Ses02M', 'impro01', 'F016']	IEMOCAP_mp3/Ses02M_impro01_F016_neu.mp3	negative
-['Ses05F', 'script02', '1', 'M000']	IEMOCAP_mp3/Ses05F_script02_1_M000_exc.mp3	negative
 ['Ses05M', 'script01', '1', 'F010']	IEMOCAP_mp3/Ses05M_script01_1_F010_fru.mp3	positive
 ['Ses03M', 'script02', '1', 'M002']	IEMOCAP_mp3/Ses03M_script02_1_M002_exc.mp3	negative
 ['Ses01M', 'script01', '1', 'M003']	IEMOCAP_mp3/Ses01M_script01_1_M003_sad.mp3	negative
-['Ses01M', 'script01', '1', 'M014']	IEMOCAP_mp3/Ses01M_script01_1_M014_fru.mp3	positive
-['Ses03M', 'impro06', 'M010']	IEMOCAP_mp3/Ses03M_impro06_M010_sad.mp3	negative
-['Ses03F', 'impro02', 'M027']	IEMOCAP_mp3/Ses03F_impro02_M027_ang.mp3	positive
 ['Ses03F', 'script02', '2', 'M040']	IEMOCAP_mp3/Ses03F_script02_2_M040_hap.mp3	negative
 ['Ses02M', 'impro01', 'M022']	IEMOCAP_mp3/Ses02M_impro01_M022_fru.mp3	positive
 ['Ses05M', 'impro03', 'M011']	IEMOCAP_mp3/Ses05M_impro03_M011_hap.mp3	negative
 ['Ses02M', 'impro02', 'M018']	IEMOCAP_mp3/Ses02M_impro02_M018_sad.mp3	negative
 ['Ses05F', 'impro08', 'F011']	IEMOCAP_mp3/Ses05F_impro08_F011_neu.mp3	negative
-['Ses02F', 'impro07', 'F006']	IEMOCAP_mp3/Ses02F_impro07_F006_exc.mp3	negative
 ['Ses01F', 'script02', '2', 'M027']	IEMOCAP_mp3/Ses01F_script02_2_M027_oth.mp3	negative
-['Ses04M', 'impro02', 'F020']	IEMOCAP_mp3/Ses04M_impro02_F020_sad.mp3	negative
 ['Ses03M', 'script02', '2', 'M021']	IEMOCAP_mp3/Ses03M_script02_2_M021_neu.mp3	negative
 ['Ses05F', 'script01', '1', 'M017']	IEMOCAP_mp3/Ses05F_script01_1_M017_fru.mp3	positive
 ['Ses01M', 'script01', '1', 'M032']	IEMOCAP_mp3/Ses01M_script01_1_M032_fru.mp3	positive
 ['Ses04M', 'script03', '2', 'F047']	IEMOCAP_mp3/Ses04M_script03_2_F047_ang.mp3	positive
 ['Ses01M', 'impro05', 'F002']	IEMOCAP_mp3/Ses01M_impro05_F002_neu.mp3	negative
-['Ses02F', 'script02', '1', 'M044']	IEMOCAP_mp3/Ses02F_script02_1_M044_neu.mp3	negative
 ['Ses03M', 'impro03', 'M029']	IEMOCAP_mp3/Ses03M_impro03_M029_hap.mp3	negative
 ['Ses05F', 'impro03', 'M005']	IEMOCAP_mp3/Ses05F_impro03_M005_exc.mp3	negative
 ['Ses04M', 'script03', '1', 'F001']	IEMOCAP_mp3/Ses04M_script03_1_F001_fea.mp3	negative
 ['Ses02F', 'impro07', 'F034']	IEMOCAP_mp3/Ses02F_impro07_F034_exc.mp3	negative
-['Ses05F', 'impro08', 'F012']	IEMOCAP_mp3/Ses05F_impro08_F012_neu.mp3	negative
 ['Ses01F', 'script01', '1', 'F043']	IEMOCAP_mp3/Ses01F_script01_1_F043_fru.mp3	positive
 ['Ses04M', 'script01', '2', 'M003']	IEMOCAP_mp3/Ses04M_script01_2_M003_fru.mp3	positive
-['Ses05F', 'impro04', 'F034']	IEMOCAP_mp3/Ses05F_impro04_F034_fru.mp3	positive
 ['Ses03F', 'script03', '2', 'F029']	IEMOCAP_mp3/Ses03F_script03_2_F029_fru.mp3	positive
-['Ses01F', 'impro03', 'F023']	IEMOCAP_mp3/Ses01F_impro03_F023_neu.mp3	negative
 ['Ses03F', 'script01', '2', 'F021']	IEMOCAP_mp3/Ses03F_script01_2_F021_sad.mp3	negative
-['Ses02M', 'script01', '1', 'F015']	IEMOCAP_mp3/Ses02M_script01_1_F015_neu.mp3	negative
 ['Ses03F', 'script01', '1', 'M046']	IEMOCAP_mp3/Ses03F_script01_1_M046_ang.mp3	positive
-['Ses01M', 'impro05', 'F007']	IEMOCAP_mp3/Ses01M_impro05_F007_neu.mp3	negative
-['Ses04M', 'impro01', 'F021']	IEMOCAP_mp3/Ses04M_impro01_F021_ang.mp3	positive
-['Ses05M', 'impro07', 'M040']	IEMOCAP_mp3/Ses05M_impro07_M040_exc.mp3	negative
 ['Ses03M', 'impro04', 'M033']	IEMOCAP_mp3/Ses03M_impro04_M033_fru.mp3	positive
 ['Ses01F', 'impro06', 'F006']	IEMOCAP_mp3/Ses01F_impro06_F006_sad.mp3	negative
-['Ses03F', 'impro07', 'M029']	IEMOCAP_mp3/Ses03F_impro07_M029_exc.mp3	negative
-['Ses01F', 'script03', '1', 'F007']	IEMOCAP_mp3/Ses01F_script03_1_F007_exc.mp3	negative
 ['Ses01M', 'impro03', 'F009']	IEMOCAP_mp3/Ses01M_impro03_F009_exc.mp3	negative
-['Ses05F', 'script03', '1', 'F005']	IEMOCAP_mp3/Ses05F_script03_1_F005_exc.mp3	negative
-['Ses02M', 'impro08', 'M012']	IEMOCAP_mp3/Ses02M_impro08_M012_neu.mp3	negative
 ['Ses03F', 'script01', '2', 'M016']	IEMOCAP_mp3/Ses03F_script01_2_M016_ang.mp3	positive
 ['Ses01M', 'script02', '1', 'F023']	IEMOCAP_mp3/Ses01M_script02_1_F023_ang.mp3	positive
 ['Ses03M', 'impro08b', 'M005']	IEMOCAP_mp3/Ses03M_impro08b_M005_neu.mp3	negative
 ['Ses01F', 'impro05', 'M010']	IEMOCAP_mp3/Ses01F_impro05_M010_neu.mp3	negative
-['Ses01M', 'script02', '2', 'F033']	IEMOCAP_mp3/Ses01M_script02_2_F033_sad.mp3	negative
-['Ses03M', 'script02', '2', 'M035']	IEMOCAP_mp3/Ses03M_script02_2_M035_fru.mp3	positive
-['Ses05M', 'script03', '2', 'F035']	IEMOCAP_mp3/Ses05M_script03_2_F035_ang.mp3	positive
-['Ses02M', 'impro05', 'F007']	IEMOCAP_mp3/Ses02M_impro05_F007_neu.mp3	negative
-['Ses03F', 'script02', '2', 'F008']	IEMOCAP_mp3/Ses03F_script02_2_F008_fru.mp3	positive
 ['Ses05M', 'impro04', 'F035']	IEMOCAP_mp3/Ses05M_impro04_F035_neu.mp3	negative
 ['Ses05M', 'script01', '1', 'M025']	IEMOCAP_mp3/Ses05M_script01_1_M025_ang.mp3	positive
-['Ses02M', 'script02', '1', 'F022']	IEMOCAP_mp3/Ses02M_script02_1_F022_fru.mp3	positive
 ['Ses03F', 'impro02', 'F019']	IEMOCAP_mp3/Ses03F_impro02_F019_sad.mp3	negative
-['Ses05F', 'impro03', 'F042']	IEMOCAP_mp3/Ses05F_impro03_F042_exc.mp3	negative
-['Ses05F', 'impro05', 'F028']	IEMOCAP_mp3/Ses05F_impro05_F028_fru.mp3	positive
 ['Ses01M', 'script01', '2', 'F012']	IEMOCAP_mp3/Ses01M_script01_2_F012_ang.mp3	positive
 ['Ses04F', 'impro02', 'M009']	IEMOCAP_mp3/Ses04F_impro02_M009_fru.mp3	positive
 ['Ses01M', 'impro04', 'F019']	IEMOCAP_mp3/Ses01M_impro04_F019_neu.mp3	negative
 ['Ses04M', 'impro05', 'M040']	IEMOCAP_mp3/Ses04M_impro05_M040_fru.mp3	positive
 ['Ses01M', 'impro04', 'F022']	IEMOCAP_mp3/Ses01M_impro04_F022_neu.mp3	negative
 ['Ses04F', 'impro03', 'M023']	IEMOCAP_mp3/Ses04F_impro03_M023_fru.mp3	positive
-['Ses05M', 'impro08', 'M025']	IEMOCAP_mp3/Ses05M_impro08_M025_neu.mp3	negative
 ['Ses02M', 'script01', '1', 'M005']	IEMOCAP_mp3/Ses02M_script01_1_M005_sad.mp3	negative
-['Ses04F', 'impro02', 'M003']	IEMOCAP_mp3/Ses04F_impro02_M003_fru.mp3	positive
 ['Ses02M', 'script01', '2', 'F015']	IEMOCAP_mp3/Ses02M_script01_2_F015_fru.mp3	positive
-['Ses05M', 'impro07', 'M005']	IEMOCAP_mp3/Ses05M_impro07_M005_exc.mp3	negative
-['Ses04M', 'impro08', 'M002']	IEMOCAP_mp3/Ses04M_impro08_M002_fru.mp3	positive
-['Ses03F', 'script03', '2', 'M001']	IEMOCAP_mp3/Ses03F_script03_2_M001_ang.mp3	positive
-['Ses01F', 'script02', '2', 'F012']	IEMOCAP_mp3/Ses01F_script02_2_F012_fru.mp3	positive
 ['Ses03M', 'impro06', 'F017']	IEMOCAP_mp3/Ses03M_impro06_F017_sad.mp3	negative
 ['Ses01M', 'script01', '3', 'M034']	IEMOCAP_mp3/Ses01M_script01_3_M034_sad.mp3	negative
-['Ses03M', 'impro05a', 'M017']	IEMOCAP_mp3/Ses03M_impro05a_M017_ang.mp3	positive
 ['Ses01M', 'impro04', 'F009']	IEMOCAP_mp3/Ses01M_impro04_F009_neu.mp3	negative
 ['Ses05M', 'script01', '2', 'M001']	IEMOCAP_mp3/Ses05M_script01_2_M001_neu.mp3	negative
-['Ses03F', 'impro06', 'F022']	IEMOCAP_mp3/Ses03F_impro06_F022_sad.mp3	negative
-['Ses05M', 'impro07', 'F045']	IEMOCAP_mp3/Ses05M_impro07_F045_hap.mp3	negative
-['Ses01M', 'impro07', 'F018']	IEMOCAP_mp3/Ses01M_impro07_F018_exc.mp3	negative
 ['Ses01F', 'impro05', 'M013']	IEMOCAP_mp3/Ses01F_impro05_M013_neu.mp3	negative
 ['Ses05F', 'impro01', 'M017']	IEMOCAP_mp3/Ses05F_impro01_M017_fru.mp3	positive
 ['Ses05M', 'impro01', 'M021']	IEMOCAP_mp3/Ses05M_impro01_M021_fru.mp3	positive
 ['Ses05F', 'impro02', 'M019']	IEMOCAP_mp3/Ses05F_impro02_M019_sur.mp3	negative
 ['Ses05F', 'impro03', 'F043']	IEMOCAP_mp3/Ses05F_impro03_F043_exc.mp3	negative
-['Ses03F', 'impro02', 'F028']	IEMOCAP_mp3/Ses03F_impro02_F028_sad.mp3	negative
-['Ses02M', 'script03', '1', 'M002']	IEMOCAP_mp3/Ses02M_script03_1_M002_fea.mp3	negative
-['Ses03M', 'impro06', 'M030']	IEMOCAP_mp3/Ses03M_impro06_M030_sad.mp3	negative
 ['Ses03M', 'script01', '1', 'M036']	IEMOCAP_mp3/Ses03M_script01_1_M036_sad.mp3	negative
 ['Ses05M', 'impro07', 'F023']	IEMOCAP_mp3/Ses05M_impro07_F023_hap.mp3	negative
 ['Ses05F', 'script02', '2', 'F027']	IEMOCAP_mp3/Ses05F_script02_2_F027_sad.mp3	negative
