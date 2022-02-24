@@ -22,21 +22,27 @@ from parser import args
 TRAIN = True
 TEST = True
 shutdown = False
-
+OUTLIERS = True
 
 locals().update(args)
 model_name = base_model.split('/')[-1]
 db = Database(collection)
 
 # ## Prepare Data for Training
-
+if OUTLIERS:
+    csv_train = 'train.csv'
+    csv_test = 'test.csv'
+else:
+    csv_train = f'train_no_outliers_{collection}.csv'
+    csv_test = f'test_no_outliers_{collection}.csv'
+    
 from datasets import load_dataset, load_metric
 
 save_path = ".csv_files"
 
 data_files = {
-    "train": f"{save_path}/train.csv",
-    "validation": f"{save_path}/test.csv",
+    "train": f"{save_path}/{csv_train}",
+    "validation": f"{save_path}/{csv_test}",
 }
 
 dataset = load_dataset(
@@ -579,7 +585,7 @@ if TEST:
     from sklearn.metrics import classification_report
 
     test_dataset = load_dataset(
-        "csv", data_files={"test": ".csv_files/test.csv"}, delimiter="\t"
+        "csv", data_files={"test": ".csv_files/{csv_test}"}, delimiter="\t"
     )["test"]
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
