@@ -42,6 +42,10 @@ parser.add_argument(
 parser.add_argument(
 "--eval_steps", type=int, required=False, default=20, help="steps for evaluation while training"
 )
+
+parser.add_argument(
+"--epochs", type=int, required=False, default=1, help="epochs of training"
+)
 parser.add_argument(
     "-e",
     "--no_evaluate",
@@ -49,6 +53,8 @@ parser.add_argument(
     dest='TEST',
     help="Does not evaluate the model",
 )
+
+
 
 parser.add_argument(
     "-t",

@@ -28,6 +28,7 @@ locals().update(args)
 model_name = base_model.split('/')[-1]
 db = Database(collection)
 
+
 # ## Prepare Data for Training
 if OUTLIERS:
     csv_train = 'train.csv'
@@ -63,6 +64,12 @@ output_column = "emotion"
 
 
 import torch
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+if device == "cpu":
+    import multiprocessing
+
+    ncpus = multiprocessing.cpu_count()
+    torch.set_num_threads(ncpus-1)
 
 negative_cases = train_dataset[output_column].count("negative")
 positive_cases = train_dataset[output_column].count("positive")
@@ -430,7 +437,7 @@ training_args = TrainingArguments(
     per_device_eval_batch_size=batch_size,
     gradient_accumulation_steps=2,
     evaluation_strategy="steps",
-    num_train_epochs=1.0,
+    num_train_epochs=epochs,
     # fp16=True,
     save_steps=save_steps,
     eval_steps=eval_steps,
@@ -567,12 +574,6 @@ trainer = CTCTrainer(
 )
 
 
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-if device == "cpu":
-    import multiprocessing
-
-    ncpus = multiprocessing.cpu_count()
-    torch.set_num_threads(ncpus)
 
 if TRAIN:
     trainer.train()
@@ -585,7 +586,7 @@ if TEST:
     from sklearn.metrics import classification_report
 
     test_dataset = load_dataset(
-        "csv", data_files={"test": ".csv_files/{csv_test}"}, delimiter="\t"
+        "csv", data_files={"test": f".csv_files/{csv_test}"}, delimiter="\t"
     )["test"]
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
