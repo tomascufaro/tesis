@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+import inspect
 import os
 import sys
 import torchaudio
@@ -19,15 +20,11 @@ from transformers.models.wav2vec2.feature_extraction_wav2vec2 import (
 )
 import argparse
 from parser import args
-TRAIN = True
-TEST = True
-shutdown = False
-OUTLIERS = True
 
 locals().update(args)
 model_name = base_model.split('/')[-1]
 db = Database(collection)
-
+print(args)
 
 # ## Prepare Data for Training
 if OUTLIERS:
@@ -69,7 +66,7 @@ if device == "cpu":
     import multiprocessing
 
     ncpus = multiprocessing.cpu_count()
-    torch.set_num_threads(ncpus-1)
+    torch.set_num_threads((ncpus-1)*2)
 
 negative_cases = train_dataset[output_column].count("negative")
 positive_cases = train_dataset[output_column].count("positive")
@@ -79,6 +76,8 @@ print("Casos positivos: ", positive_cases)
 w0 = (negative_cases + positive_cases) / (2 * negative_cases)
 w1 = (positive_cases + negative_cases) / (2 * positive_cases)
 class_weights = torch.tensor([w0, w1])
+if no_class_weights:
+    class_weights = torch.tensor([float(1), float(1)])
 
 # Analizar este metodo: https://arxiv.org/abs/1901.05555
 
@@ -120,6 +119,7 @@ print(f"The target sampling rate: {target_sampling_rate}")
 from database import Database
 from sklearn.preprocessing import MinMaxScaler
 from audio_process import Filter
+import torch.nn.functional as F
 
 
 def speech_file_to_array_fn(path):
@@ -150,20 +150,14 @@ def get_features_from_db(path):
 
 
 def preprocess_function(examples):
-    preprocessor = Preprocessor(scaler=Standard_Scaler())
     speech_list = [speech_file_to_array_fn(path) for path in examples[input_column]]
     feature_list = [get_features_from_db(path) for path in examples[input_column]]
     target_list = [label_to_id(label, label_list) for label in examples[output_column]]
-    # feature_list = preprocessor.scale(np.array(feature_list)[:,0,:], list(target_list))
-    # feature_list = MinMaxScaler().fit_transform(feature_list, target_list)
     result = processor(speech_list, sampling_rate=target_sampling_rate)
     result["labels"] = list(target_list)
     result["features"] = list(feature_list)
 
     return result
-
-
-# In[13]:
 
 
 train_dataset = train_dataset.map(
@@ -211,6 +205,12 @@ class Wav2Vec2ClassificationHead(nn.Module):
 
     def __init__(self, config):
         super().__init__()
+        # self.input_layer = nn.Linear(config.hidden_size + 57, 128)
+        # self.dropout = nn.Dropout(p=0.2)
+        # self.dense = nn.Linear(128, 128)
+        # # self.dense2 = nn.Linear(128, 128)
+        # # self.dropout2 = nn.Dropout(config.final_dropout)
+        # self.out_proj = nn.Linear(128, config.num_labels)
         self.dense = nn.Linear(config.hidden_size + 57, config.hidden_size + 57)
         self.dropout = nn.Dropout(config.final_dropout)
         self.out_proj = nn.Linear(config.hidden_size + 57, config.num_labels)
@@ -656,9 +656,22 @@ if TEST:
 
     print(y_true[:5])
     print(y_pred[:5])
-
-    print(classification_report(y_true, y_pred, target_names=label_names))
-
+    report = classification_report(y_true, y_pred, target_names=label_names)
+    print(report)
+     
+    lines = inspect.getsource(Wav2Vec2ClassificationHead.__init__)
+    classification_string =  "\n".join(lines.split("\n")[1:])
+    lines = inspect.getsource(Wav2Vec2ClassificationHead.forward)
+    classification_string2 =  "\n".join(lines.split("\n")[1:])
+    with open(model_name_or_path + '/results.txt', 'a') as results_file:
+        results_file.write(str(args))
+        results_file.write('\n')
+        results_file.write(str(report))
+        results_file.write('\n\n\n')
+        results_file.write(classification_string)
+        results_file.write('\n')
+        results_file.write(classification_string2)
+        results_file.write('\n')
 if shutdown:
     import os
 

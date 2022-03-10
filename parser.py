@@ -72,5 +72,12 @@ parser.add_argument(
     help="remove outliers",
 )
 
+parser.add_argument(
+    "--no_class_weights",
+    action= 'store_true',\
+    dest='no_class_weights',
+    help="class weights = 1",
+)
+
 args = parser.parse_args()
 args = vars(args)

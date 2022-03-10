@@ -1,5 +1,4 @@
 .env
-
 test.py
 wav_mp3.py
 wav2vec_test.py
@@ -8,6 +7,7 @@ output.txt
 IEMOCAP_Norm_MinMax.json
 IEMOCAP_Norm_Std.json
 IEMOCAP.json
+resultados/
 IEMOCAP_wav/
 IEMOCAP_mp3/
 wav2vec2-xls-r-300m/
