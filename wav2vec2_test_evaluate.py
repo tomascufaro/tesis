@@ -1017,72 +1017,30 @@ if TEST:
     test_dataset = test_dataset.map(speech_file_to_array_fn)
 
     result = test_dataset.map(predict, batched=True, batch_size=8)
-        batch["speech"] = speech_array
-        id = "iemocap_" + os.path.basename(batch["path"]) + "_"
-        collection = (
-            db.dataset_no_aug.loc[db.dataset_no_aug["_id"] == id]
-            .drop(columns=["_id", "augmented", "label"])
-            .to_numpy()
-        )
-        batch["features"] = collection
-        return batch
 
-    def predict(batch):
-        features = processor(
-            batch["speech"],
-            sampling_rate=processor.sampling_rate,
-            return_tensors="pt",
-            padding=True,
-        )
-        acoustic_features = batch["features"]
-        input_values = features.input_values.to(device)
-        # attention_mask = features.attention_mask.to(device)
+    label_names = [config.id2label[i] for i in range(config.num_labels)]
 
-        with torch.no_grad():
-            logits = model(input_values, features=acoustic_features).logits
+    y_true = [0 if name == "negative" else 1 for name in result["emotion"]]
+    y_pred = result["predicted"]
 
-        pred_ids = torch.argmax(logits, dim=-1).detach().cpu().numpy()
-        batch["predicted"] = pred_ids
-        return batch
+    metrics = Evaluator().evaluate_from_pred(y_true, y_pred)
+    print(metrics)
+    report = classification_report(y_true, y_pred, target_names=label_names)
+    print(report)
 
-    test_dataset = test_dataset.map(speech_file_to_array_fn)
-
-    result = test_dataset.map(predict, batched=True, batch_size=8)
-            db.dataset_no_aug.loc[db.dataset_no_aug["_id"] == id]
-            .drop(columns=["_id", "augmented", "label"])
-            .to_numpy()
-        )
-        batch["features"] = collection
-        return batch
-
-    def predict(batch):
-        features = processor(
-            batch["speech"],
-            sampling_rate=processor.sampling_rate,
-            return_tensors="pt",
-            padding=True,
-        )
-        acoustic_features = batch["features"]
-        input_values = features.input_values.to(device)
-        # attention_mask = features.attention_mask.to(device)
-
-        with torch.no_grad():
-            logits = model(input_values, features=acoustic_features).logits
-
-        pred_ids = torch.argmax(logits, dim=-1).detach().cpu().numpy()
-        batch["predicted"] = pred_ids
-        return batch
-
-    test_dataset = test_dataset.map(speech_file_to_array_fn)
-
-    result = test_dataset.map(predict, batched=True, batch_size=8)
-        results_file.write('\n')
+    lines = inspect.getsource(Wav2Vec2ClassificationHead.__init__)
+    classification_string = "\n".join(lines.split("\n")[1:])
+    lines = inspect.getsource(Wav2Vec2ClassificationHead.forward)
+    classification_string2 = "\n".join(lines.split("\n")[1:])
+    with open(model_name_or_path + "/results.txt", "a") as results_file:
+        results_file.write(str(args))
+        results_file.write("\n")
         results_file.write(str(report))
-        results_file.write('\n\n\n')
+        results_file.write("\n\n\n")
         results_file.write(classification_string)
-        results_file.write('\n')
+        results_file.write("\n")
         results_file.write(classification_string2)
-        results_file.write('\n')
+        results_file.write("\n")
 if shutdown:
     import os
 
