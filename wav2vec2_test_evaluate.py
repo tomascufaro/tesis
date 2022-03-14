@@ -773,223 +773,7 @@ if TEST:
 
         batch["speech"] = speech_array
         id = "iemocap_" + os.path.basename(batch["path"]) + "_"
-        collection = (
-
-        return (loss, outputs) if return_outputs else loss
-
-    def training_step(
-        self, model: nn.Module, inputs: Dict[str, Union[torch.Tensor, Any]]
-    ) -> torch.Tensor:
-        """
-        Perform a training step on a batch of inputs.
-
-        Subclass and override to inject custom behavior.
-
-        Args:
-            model (:obj:`nn.Module`):
-                The model to train.
-            inputs (:obj:`Dict[str, Union[torch.Tensor, Any]]`):
-                The inputs and targets of the model.
-
-                The dictionary will be unpacked before being fed to the model. Most models expect the targets under the
-                argument :obj:`labels`. Check your model's documentation for all accepted arguments.
-
-        Return:
-            :obj:`torch.Tensor`: The tensor with training loss on this batch.
-        """
-
-        model.train()
-        inputs = self._prepare_inputs(inputs)
-
-        if self.use_amp:
-            with autocast():
-                loss = self.compute_loss(model, inputs)
-        else:
-            loss = self.compute_loss(model, inputs)
-
-        if self.args.gradient_accumulation_steps > 1:
-            loss = loss / self.args.gradient_accumulation_steps
-
-        if self.use_amp:
-            self.scaler.scale(loss).backward()
-        elif self.use_apex:
-            with amp.scale_loss(loss, self.optimizer) as scaled_loss:
-                scaled_loss.backward()
-        elif self.deepspeed:
-            self.deepspeed.backward(loss)
-        else:
-            loss.backward()
-
-        return loss.detach()
-
-
-# Now, all instances can be passed to Trainer and we are ready to start training!
-
-trainer = CTCTrainer(
-    model=model,
-    data_collator=data_collator,
-    args=training_args,
-    compute_metrics=compute_metrics,
-    train_dataset=train_dataset,
-    eval_dataset=eval_dataset,
-    tokenizer=processor,
-    class_weights=class_weights,
-)
-
-
-
-if TRAIN:
-    trainer.train()
-
-
-## Evaluation
-
-if TEST:
-    import librosa
-    from sklearn.metrics import classification_report
-
-    test_dataset = load_dataset(
-        "csv", data_files={"test": f".csv_files/{csv_test}"}, delimiter="\t"
-    )["test"]
-
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    print(f"Device: {device}")
-
-    n_checkpoint = 0
-    checkpoints = glob.glob(f"{model_name}/checkpoint-*")
-    for checkpoint in checkpoints:
-        n = int(checkpoint.split("-")[-1])
-        if n > n_checkpoint:
-            n_checkpoint = n
-
-    model_name_or_path = f"{model_name}/checkpoint-{n_checkpoint}"
-
-    config = AutoConfig.from_pretrained(model_name_or_path)
-    setattr(config, "pooling_mode", pooling_mode)
-    processor = Wav2Vec2FeatureExtractor.from_pretrained(
-        model_name_or_path,
-    )
-    model = Wav2Vec2ForSpeechClassification.from_pretrained(model_name_or_path).to(
-        device
-    )
-
-    def speech_file_to_array_fn(batch):
-        speech_array, sampling_rate = torchaudio.load(batch["path"])
-        speech_array = speech_array.squeeze().numpy()
-        speech_array = librosa.resample(
-            np.asarray(speech_array), sampling_rate, processor.sampling_rate
-        )
-
-
-        return (loss, outputs) if return_outputs else loss
-
-    def training_step(
-        self, model: nn.Module, inputs: Dict[str, Union[torch.Tensor, Any]]
-    ) -> torch.Tensor:
-        """
-        Perform a training step on a batch of inputs.
-
-        Subclass and override to inject custom behavior.
-
-        Args:
-            model (:obj:`nn.Module`):
-                The model to train.
-            inputs (:obj:`Dict[str, Union[torch.Tensor, Any]]`):
-                The inputs and targets of the model.
-
-                The dictionary will be unpacked before being fed to the model. Most models expect the targets under the
-                argument :obj:`labels`. Check your model's documentation for all accepted arguments.
-
-        Return:
-            :obj:`torch.Tensor`: The tensor with training loss on this batch.
-        """
-
-        model.train()
-        inputs = self._prepare_inputs(inputs)
-
-        if self.use_amp:
-            with autocast():
-                loss = self.compute_loss(model, inputs)
-        else:
-            loss = self.compute_loss(model, inputs)
-
-        if self.args.gradient_accumulation_steps > 1:
-            loss = loss / self.args.gradient_accumulation_steps
-
-        if self.use_amp:
-            self.scaler.scale(loss).backward()
-        elif self.use_apex:
-            with amp.scale_loss(loss, self.optimizer) as scaled_loss:
-                scaled_loss.backward()
-        elif self.deepspeed:
-            self.deepspeed.backward(loss)
-        else:
-            loss.backward()
-
-        return loss.detach()
-
-
-# Now, all instances can be passed to Trainer and we are ready to start training!
-
-trainer = CTCTrainer(
-    model=model,
-    data_collator=data_collator,
-    args=training_args,
-    compute_metrics=compute_metrics,
-    train_dataset=train_dataset,
-    eval_dataset=eval_dataset,
-    tokenizer=processor,
-    class_weights=class_weights,
-)
-
-
-
-if TRAIN:
-    trainer.train()
-
-
-## Evaluation
-
-if TEST:
-    import librosa
-    from sklearn.metrics import classification_report
-
-    test_dataset = load_dataset(
-        "csv", data_files={"test": f".csv_files/{csv_test}"}, delimiter="\t"
-    )["test"]
-
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    print(f"Device: {device}")
-
-    n_checkpoint = 0
-    checkpoints = glob.glob(f"{model_name}/checkpoint-*")
-    for checkpoint in checkpoints:
-        n = int(checkpoint.split("-")[-1])
-        if n > n_checkpoint:
-            n_checkpoint = n
-
-    model_name_or_path = f"{model_name}/checkpoint-{n_checkpoint}"
-
-    config = AutoConfig.from_pretrained(model_name_or_path)
-    setattr(config, "pooling_mode", pooling_mode)
-    processor = Wav2Vec2FeatureExtractor.from_pretrained(
-        model_name_or_path,
-    )
-    model = Wav2Vec2ForSpeechClassification.from_pretrained(model_name_or_path).to(
-        device
-    )
-
-    def speech_file_to_array_fn(batch):
-        speech_array, sampling_rate = torchaudio.load(batch["path"])
-        speech_array = speech_array.squeeze().numpy()
-        speech_array = librosa.resample(
-            np.asarray(speech_array), sampling_rate, processor.sampling_rate
-        )
-
-        batch["speech"] = speech_array
-        id = "iemocap_" + os.path.basename(batch["path"]) + "_"
-        collection = (
-            db.dataset_no_aug.loc[db.dataset_no_aug["_id"] == id]
+        collection = (db.dataset_no_aug.loc[db.dataset_no_aug["_id"] == id]
             .drop(columns=["_id", "augmented", "label"])
             .to_numpy()
         )
@@ -1013,7 +797,6 @@ if TEST:
         pred_ids = torch.argmax(logits, dim=-1).detach().cpu().numpy()
         batch["predicted"] = pred_ids
         return batch
-
     test_dataset = test_dataset.map(speech_file_to_array_fn)
 
     result = test_dataset.map(predict, batched=True, batch_size=8)
@@ -1023,10 +806,11 @@ if TEST:
     y_true = [0 if name == "negative" else 1 for name in result["emotion"]]
     y_pred = result["predicted"]
 
-    metrics = Evaluator().evaluate_from_pred(y_true, y_pred)
-    print(metrics)
     report = classification_report(y_true, y_pred, target_names=label_names)
     print(report)
+    metrics = Evaluator().evaluate_from_pred(y_true, y_pred)
+    print(metrics)
+    
 
     lines = inspect.getsource(Wav2Vec2ClassificationHead.__init__)
     classification_string = "\n".join(lines.split("\n")[1:])

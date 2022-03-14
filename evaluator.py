@@ -27,7 +27,7 @@ class Metrics:
         self.f_score = f_score
         self.metrics = self.__return_dict()
 
-    def __str__(self):
+    def __repr__(self):
         text = textwrap.dedent(
             f"""\
             Exactitud: {self.accuracy}
