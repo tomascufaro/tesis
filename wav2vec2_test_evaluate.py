@@ -10,7 +10,9 @@ import pandas as pd
 from dotenv import load_dotenv
 from pathlib import Path
 from tqdm import tqdm
-
+import json
+import torch 
+import pdb
 from sklearn.model_selection import train_test_split
 from database import Database
 from dataset_preprocessor import Preprocessor, Standard_Scaler
@@ -26,8 +28,16 @@ OUTLIERS = True
 
 locals().update(args)
 model_name = base_model.split('/')[-1]
-db = Database(collection)
+cuda = torch.device('cuda')
 
+class Database_json():
+    def __init__(self, json_file) -> None:
+        with open(json_file) as f:
+            file_data = json.load(f)
+            df = pd.DataFrame(list(file_data))
+        self.dataset_no_aug = df
+
+db = Database_json(f"{collection}.json")
 
 # ## Prepare Data for Training
 if OUTLIERS:
@@ -78,7 +88,7 @@ print("Casos positivos: ", positive_cases)
 
 w0 = (negative_cases + positive_cases) / (2 * negative_cases)
 w1 = (positive_cases + negative_cases) / (2 * positive_cases)
-class_weights = torch.tensor([w0, w1])
+class_weights = torch.tensor([w0, w1]).to('cuda')
 
 # Analizar este metodo: https://arxiv.org/abs/1901.05555
 
@@ -417,7 +427,7 @@ model = Wav2Vec2ForSpeechClassification.from_pretrained(
     config=config,
     class_weights=class_weights,
 )
-
+model = model.to(device=cuda)
 
 # The first component of XLSR-Wav2Vec2 consists of a stack of CNN layers that are used to extract acoustically meaningful - but contextually independent - features from the raw speech signal. This part of the model has already been sufficiently trained during pretraining and as stated in the [paper](https://arxiv.org/pdf/2006.13979.pdf) does not need to be fine-tuned anymore.
 # Thus, we can set the `requires_grad` to `False` for all parameters of the *feature extraction* part.
@@ -506,6 +516,7 @@ class CTCTrainer(Trainer):
     def compute_loss(self, model, inputs, return_outputs=False):
         labels = inputs.get("labels")
         # forward pass
+        pdb.set_trace()
         outputs = model(**inputs)
         logits = outputs.get("logits")
         # compute custom loss
@@ -534,10 +545,11 @@ class CTCTrainer(Trainer):
         Return:
             :obj:`torch.Tensor`: The tensor with training loss on this batch.
         """
-
+        model.to(device=cuda)
         model.train()
         inputs = self._prepare_inputs(inputs)
-
+        inputs = {k: v.to('cuda') for k, v in inputs.items()}
+        pdb.set_trace()
         if self.use_amp:
             with autocast():
                 loss = self.compute_loss(model, inputs)

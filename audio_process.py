@@ -12,7 +12,7 @@ from audiomentations import (
     TimeStretch,
     PitchShift,
     ClippingDistortion,
-    AddImpulseResponse,
+    ApplyImpulseResponse
 )
 
 
@@ -111,7 +111,7 @@ class Reverberator(Processor):
         augment = Compose(
             [
                 AddGaussianNoise(min_amplitude=0.2, max_amplitude=0.4, p=1),
-                AddImpulseResponse(
+                ApplyImpulseResponse(
                     ir_path=self.ir_path,
                     p=1,
                 ),
